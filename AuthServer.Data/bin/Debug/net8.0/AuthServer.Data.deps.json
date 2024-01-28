@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AuthServer.Data/1.0.0": {
+        "dependencies": {
+          "AuthServer.Core": "1.0.0"
+        },
+        "runtime": {
+          "AuthServer.Data.dll": {}
+        }
+      },
+      "AuthServer.Core/1.0.0": {
+        "runtime": {
+          "AuthServer.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AuthServer.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AuthServer.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
