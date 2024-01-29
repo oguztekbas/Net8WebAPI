@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 namespace AuthServer.Core.Repositories
 {
     //Repositories klasörü içindeki interface'ler Data katmanında iplemente edilir.
+    //Bu Generic Repository yani Db'de çekilecek En Genel kullanılan 5 metodu otomatik yazmak için.
+    //Tekrar tekrar her tablo için yazmamak için kullanılır.
     public interface IGenericRepository<TEntity> where TEntity : class
     {
         Task<TEntity> GetByIdAsync(int id);

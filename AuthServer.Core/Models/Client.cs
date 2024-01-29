@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace AuthServer.Core.Models
 {
+
+    //Models'i uygulama içi lazım olan herhangi objeler için kullanıyoruz.
     public class Client
     {
         public string Id { get; set; }

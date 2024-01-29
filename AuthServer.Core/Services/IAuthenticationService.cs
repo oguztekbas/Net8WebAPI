@@ -11,6 +11,8 @@ namespace AuthServer.Core.Services
     public interface IAuthenticationService
     {
         Task<Response<TokenDto>> CreateAccessTokenAsync(LoginDto loginDto);
+
+        //Refresh token kullanarak AccessToken oluşturma
         Task<Response<TokenDto>> CreateAccessTokenByRefreshToken(string refreshToken);
 
         //Client tarafında kullanıcı logout olduğunda client token ve refreshToken bilgilerini
