@@ -9,3 +9,4 @@ C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\SharedLibrary\obj\Debug\net8.0\
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\SharedLibrary\obj\Debug\net8.0\refint\SharedLibrary.dll
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\SharedLibrary\obj\Debug\net8.0\SharedLibrary.pdb
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\SharedLibrary\obj\Debug\net8.0\ref\SharedLibrary.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\SharedLibrary\obj\Debug\net8.0\SharedLibrary.sourcelink.json

@@ -98,7 +98,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\oguzt\\OneDrive\\Desktop\\proje\\AuthServer\\SharedLibrary\\SharedLibrary.csproj": {
+                "projectPath": "C:\\Users\\oguzt\\OneDrive\\Desktop\\proje\\AuthServer\\SharedLibrary\\SharedLibrary.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -110,6 +114,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

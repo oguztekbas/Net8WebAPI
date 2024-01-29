@@ -32,3 +32,4 @@ C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\MiniApp1.API\obj\Debug\net8.0\M
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\MiniApp1.API\obj\Debug\net8.0\ref\MiniApp1.API.dll
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\MiniApp1.API\bin\Debug\net8.0\SharedLibrary.dll
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\MiniApp1.API\bin\Debug\net8.0\SharedLibrary.pdb
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\MiniApp1.API\obj\Debug\net8.0\MiniApp1.API.sourcelink.json

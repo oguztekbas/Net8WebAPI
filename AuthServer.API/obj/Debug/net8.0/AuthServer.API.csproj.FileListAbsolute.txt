@@ -38,3 +38,13 @@ C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\bin\Debug\net8.0
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\bin\Debug\net8.0\SharedLibrary.pdb
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\bin\Debug\net8.0\AuthServer.Core.pdb
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\bin\Debug\net8.0\AuthServer.Data.pdb
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\obj\Debug\net8.0\AuthServer.API.sourcelink.json

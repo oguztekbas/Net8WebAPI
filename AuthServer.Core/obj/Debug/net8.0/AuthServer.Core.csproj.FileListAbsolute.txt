@@ -9,3 +9,8 @@ C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Core\obj\Debug\net8.
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Core\obj\Debug\net8.0\refint\AuthServer.Core.dll
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Core\obj\Debug\net8.0\AuthServer.Core.pdb
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Core\obj\Debug\net8.0\ref\AuthServer.Core.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Core\bin\Debug\net8.0\SharedLibrary.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Core\bin\Debug\net8.0\SharedLibrary.pdb
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Core\obj\Debug\net8.0\AuthServer.Core.csproj.AssemblyReference.cache
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Core\obj\Debug\net8.0\AuthServer.Core.sourcelink.json
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Core\obj\Debug\net8.0\AuthServer.Core.csproj.CopyComplete
