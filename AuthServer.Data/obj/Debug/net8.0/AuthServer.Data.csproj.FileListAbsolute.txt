@@ -16,3 +16,5 @@ C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Data\obj\Debug\net8.
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Data\bin\Debug\net8.0\SharedLibrary.dll
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Data\bin\Debug\net8.0\SharedLibrary.pdb
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Data\obj\Debug\net8.0\AuthServer.Data.sourcelink.json
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Data\bin\Debug\net8.0\AuthServer.Data.runtimeconfig.json
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Data\obj\Debug\net8.0\AuthServer.Data.genruntimeconfig.cache
