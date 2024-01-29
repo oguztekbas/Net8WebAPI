@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniApp1.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af86ab6333f64b6117e0bec959dbbf476caf0f1c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16a15b5fee682fcaade2cc81d253a53e66ae084f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniApp1.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniApp1.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
