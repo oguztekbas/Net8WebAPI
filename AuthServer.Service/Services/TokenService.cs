@@ -26,7 +26,7 @@ namespace AuthServer.Service.Services
         public TokenService(UserManager<UserApp> userManager, IOptions<CustomTokenOption> options)
         {
             _userManager = userManager;
-            _tokenOption = options.Value;
+            _tokenOption = options.Value; //Token değerlerini app.settings'den bu şekilde aldık.
         }
 
         public TokenDto CreateToken(UserApp userApp)
@@ -112,6 +112,7 @@ namespace AuthServer.Service.Services
                 return Convert.ToBase64String(numberByte);
             }
         }
+
         private IEnumerable<Claim> GetClaims(UserApp userApp, List<String> audiences)
         {
             var userList = new List<Claim>

@@ -20,6 +20,10 @@ namespace AuthServer.Service.Services
         {
             _userManager = userManager; 
         }
+
+        // Oauth gibi protokollere uygun hazır Identity Framework'ünü kullanıyoruz projede.
+        // Burda Password geçme işleminde =>  userManager.CreateAsync(user,createUserDto.Password)
+        // Identity framework'üyle otomatik hashlendiğini unutma.
         public async Task<Response<UserAppDto>> CreateUserAsync(CreateUserDto createUserDto)
         {
             var user = new UserApp

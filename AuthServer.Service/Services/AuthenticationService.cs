@@ -57,6 +57,10 @@ namespace AuthServer.Service.Services
 
             var userRefreshToken = await _userRefreshTokenService.Where(i => i.UserId == user.Id).FirstOrDefaultAsync();
 
+            // Token almak için request geldi. Token'ı yarattık token içinde refreshToken'ı da dönüyorsun
+            // Ancak db'deki durumunu kontrol etmelisin. Db'de kaydı yoksa ekleme işlemi yap.
+            // Db'de kaydı varsa değeri yeni yarattığın tokendaki güncel refreshToken bilgisiyle güncelle
+            
             if (userRefreshToken == null)
             {
                 await _userRefreshTokenService.AddAsync(new UserRefreshToken
@@ -77,6 +81,9 @@ namespace AuthServer.Service.Services
             return Response<TokenDto>.Success(token, 200);
         }
 
+        // İlk önce böyle bir refreshToken DB'de var mı kontrol ediyoruz.
+        // Yoksa hata yolluyoruz. Varsa böyle bir kullanıcı var mı çünkü refreshToken içinde userId bilgisi de var.
+        // Bu kontrolden sonra yeni bir token yaratıp yolluyoruz.
         public async Task<Response<TokenDto>> CreateAccessTokenByRefreshToken(string refreshToken)
         {
             var existRefreshToken = await _userRefreshTokenService.Where(i => i.Code == refreshToken).FirstOrDefaultAsync();
@@ -103,6 +110,8 @@ namespace AuthServer.Service.Services
             return Response<TokenDto>.Success(tokenDto, 200);
         }
 
+        // Üyelik sistemi olmayan örneğin hava durumu app'e hizmet eden API için token yaratma.
+        // 
         public Response<ClientTokenDto> CreateTokenByClient(ClientLoginDto clientLoginDto)
         {
             var client = _clients.FirstOrDefault(i => i.Id == clientLoginDto.ClientId && i.Secret == clientLoginDto.ClientSecret);
@@ -117,6 +126,9 @@ namespace AuthServer.Service.Services
             return Response<ClientTokenDto>.Success(token, 200);
         }
 
+        // Kullanıcı client tarafından logout request'i ile geldiğinde refreshToken revoke edilmeli
+        // yani DB'den silinmeli ki kötü niyetli kullanıcı tarafından ele geçirilip suistimal edilmesin.
+        // veya her hangi bir durumda da token bilgisinin ele geçildiği bilinirse kullanılabilir.
         public async Task<Response<NoDataDto>> RevokeRefreshToken(string refreshToken)
         {
             var existRefreshToken = await _userRefreshTokenService.Where(i => i.Code == refreshToken).FirstOrDefaultAsync();
