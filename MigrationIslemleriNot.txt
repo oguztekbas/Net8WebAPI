@@ -1,0 +1,4 @@
+1-add-migration initial
+2-update-database
+burada hata çıktı 
+start projesinde bunu false olarak değiştir çözdü.<InvariantGlobalization>true</InvariantGlobalization>
