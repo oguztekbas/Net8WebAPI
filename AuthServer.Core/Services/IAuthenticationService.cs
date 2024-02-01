@@ -22,6 +22,6 @@ namespace AuthServer.Core.Services
         
         //MiniApp3 dediğimiz örneğin hava durumu API'si. Yani üyelik sistemi yok ama
         //appSettings'e koyacağımız clientId ve şifresine göre token vereceğiz ona göre çalışacak.
-        Task<Response<ClientTokenDto>> CreateTokenByClient(ClientLoginDto clientLoginDto);
+        Response<ClientTokenDto> CreateTokenByClient(ClientLoginDto clientLoginDto);
     }
 }
