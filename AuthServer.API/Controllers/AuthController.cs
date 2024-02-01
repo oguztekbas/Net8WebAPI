@@ -15,7 +15,8 @@ namespace AuthServer.API.Controllers
             _authenticationService = authenticationService;      
         }
 
-        //api/auth/createtoken
+        // api/auth/login
+        [Route("login")]
         [HttpPost]
         public async Task<IActionResult> CreateToken(LoginDto loginDto)
         {

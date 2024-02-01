@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AuthServer.API.Controllers
 {
-    [Route("api/[controller]/action")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class UserController : CustomBaseController
     {
@@ -17,6 +17,8 @@ namespace AuthServer.API.Controllers
             _userService = userService;
         }
 
+        // api/user/register
+        [Route("register")]
         [HttpPost]
         public async Task<IActionResult> CreateUser(CreateUserDto createUserDto)
         {

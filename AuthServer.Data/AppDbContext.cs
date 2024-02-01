@@ -35,8 +35,7 @@ namespace AuthServer.Data
             builder.Entity<UserRefreshToken>().HasKey(x => x.UserId);
             builder.Entity<UserRefreshToken>().Property(x => x.Code).IsRequired().HasMaxLength(200);
 
-            builder.Entity<UserApp>().Property(x => x.City).HasMaxLength(50);
-
+            builder.Entity<UserApp>().Property(x => x.City).HasMaxLength(200);
 
             base.OnModelCreating(builder);
         }
