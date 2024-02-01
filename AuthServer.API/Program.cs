@@ -102,6 +102,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+//------------------------------------------------------------ Authentication middleware eklendi.
+app.UseAuthentication();
+//------------------------------------------------------------
+
 app.UseAuthorization();
 
 app.MapControllers();
