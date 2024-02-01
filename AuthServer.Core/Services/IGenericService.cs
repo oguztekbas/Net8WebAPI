@@ -15,8 +15,8 @@ namespace AuthServer.Core.Services
         Task<Response<IEnumerable<TDto>>> GetAllAsync();
         Task<Response<IEnumerable<TDto>>> Where(Expression<Func<TEntity, bool>> predicate);
         Task<Response<TDto>> AddAsync(TDto entity);
-        Task<Response<NoDataDto>> Remove(int id);
-        Task<Response<NoDataDto>> Update(TDto entity, int id);
+        Task<Response<NoDataDto>> RemoveAsync(int id);
+        Task<Response<NoDataDto>> UpdateAsync(TDto entity, int id);
     }
     /// Buradaki Service Interface'inde şunu yapmaya çalışıyoruz:
     /// Service katmanında automapper ile mapleme işlemi yapacağımız ve Entity yerine DTo döneceğimiz için

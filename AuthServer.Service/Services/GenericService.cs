@@ -57,7 +57,7 @@ namespace AuthServer.Service.Services
             return Response<TDto>.Success(productTDto, 200);
         }
 
-        public async Task<Response<NoDataDto>> Remove(int id)
+        public async Task<Response<NoDataDto>> RemoveAsync(int id)
         {
             var productTEntity = await _genericRepository.GetByIdAsync(id);
 
@@ -72,7 +72,7 @@ namespace AuthServer.Service.Services
             return Response<NoDataDto>.Success(204);
         }
 
-        public async Task<Response<NoDataDto>> Update(TDto entity, int id)
+        public async Task<Response<NoDataDto>> UpdateAsync(TDto entity, int id)
         {
             var productTEntity = await _genericRepository.GetByIdAsync(id);
 
