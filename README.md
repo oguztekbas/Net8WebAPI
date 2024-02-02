@@ -12,4 +12,3 @@ ve clientId ve clientSecret bilgileriyle gelen bir client için (Örn: Hava duru
 
 Devam ediyor...
 
-![](projeGorseli.png)
