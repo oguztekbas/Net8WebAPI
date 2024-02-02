@@ -1,3 +1,4 @@
+using AuthServer.API.Extensions;
 using AuthServer.Core.Entities;
 using AuthServer.Core.Models;
 using AuthServer.Core.Repositories;
@@ -107,6 +108,11 @@ app.UseAuthentication();
 //------------------------------------------------------------
 
 app.UseAuthorization();
+
+//--------------------------------------------------------- GlobalException middleware Extension'ý eklendi.
+app.UseHandleGlobalException();
+//---------------------------------------------------------
+
 
 app.MapControllers();
 

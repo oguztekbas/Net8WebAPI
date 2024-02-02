@@ -43,8 +43,8 @@ namespace AuthServer.API.Controllers
             return ActionResultInstance(result);
         }
 
-        [Route("{id}")]
-        [HttpDelete]
+        //[Route("{id}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
             var result = await _productService.RemoveAsync(id);
