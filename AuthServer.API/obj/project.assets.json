@@ -1627,8 +1627,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.1",
-          "SharedLibrary": "1.0.0"
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.1"
         },
         "compile": {
           "bin/placeholder/AuthServer.Core.dll": {}
@@ -1665,19 +1664,6 @@
         "runtime": {
           "bin/placeholder/AuthServer.Service.dll": {}
         }
-      },
-      "SharedLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/SharedLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SharedLibrary.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       }
     }
   },
@@ -4472,11 +4458,6 @@
       "type": "project",
       "path": "../AuthServer.Service/AuthServer.Service.csproj",
       "msbuildProject": "../AuthServer.Service/AuthServer.Service.csproj"
-    },
-    "SharedLibrary/1.0.0": {
-      "type": "project",
-      "path": "../SharedLibrary/SharedLibrary.csproj",
-      "msbuildProject": "../SharedLibrary/SharedLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4484,7 +4465,6 @@
       "AuthServer.Service >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.1",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.1",
-      "SharedLibrary >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -4517,9 +4497,6 @@
           "projectReferences": {
             "C:\\Users\\oguzt\\OneDrive\\Desktop\\proje\\AuthServer\\AuthServer.Service\\AuthServer.Service.csproj": {
               "projectPath": "C:\\Users\\oguzt\\OneDrive\\Desktop\\proje\\AuthServer\\AuthServer.Service\\AuthServer.Service.csproj"
-            },
-            "C:\\Users\\oguzt\\OneDrive\\Desktop\\proje\\AuthServer\\SharedLibrary\\SharedLibrary.csproj": {
-              "projectPath": "C:\\Users\\oguzt\\OneDrive\\Desktop\\proje\\AuthServer\\SharedLibrary\\SharedLibrary.csproj"
             }
           }
         }

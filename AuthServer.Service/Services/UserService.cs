@@ -1,9 +1,9 @@
-﻿using AuthServer.Core.DTOs;
+﻿using AuthServer.Core.CommonDTOs;
+using AuthServer.Core.DTOs;
 using AuthServer.Core.Entities;
 using AuthServer.Core.Services;
 using AuthServer.Service.AutoMapper;
 using Microsoft.AspNetCore.Identity;
-using SharedLibrary.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;

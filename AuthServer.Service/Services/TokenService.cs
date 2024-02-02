@@ -2,10 +2,10 @@
 using AuthServer.Core.Entities;
 using AuthServer.Core.Models;
 using AuthServer.Core.Services;
+using AuthServer.Service.CommonServices;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using SharedLibrary.Configuration;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -34,7 +34,7 @@ namespace AuthServer.Service.Services
             var accessTokenExpiration = DateTime.Now.AddMinutes(_tokenOption.AccessTokenExpiration);
             var refreshTokenExpiration = DateTime.Now.AddMinutes(_tokenOption.AccessTokenExpiration);
 
-            var securityKey = SignService.GetSymmetricSecurityKey(_tokenOption.SecurityKey);
+            var securityKey = CommonMethods.GetSymmetricSecurityKey(_tokenOption.SecurityKey);
 
             SigningCredentials signingCredentials = new SigningCredentials(securityKey,SecurityAlgorithms.HmacSha256Signature);
 
@@ -64,11 +64,11 @@ namespace AuthServer.Service.Services
 
         // Üyelik sistemi barındırmayan client'le ilgili üretilen token. Bu yüzden refreshToken'ı yok.
         // ve claims'i farklı ClientId var.
-        public ClientTokenDto CreateTokenByClient(Client client)
+        public ClientTokenDto CreateTokenByClient(ClientTokenOption client)
         {
             var accessTokenExpiration = DateTime.Now.AddMinutes(_tokenOption.AccessTokenExpiration);
 
-            var securityKey = SignService.GetSymmetricSecurityKey(_tokenOption.SecurityKey);
+            var securityKey = CommonMethods.GetSymmetricSecurityKey(_tokenOption.SecurityKey);
 
             SigningCredentials signingCredentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256Signature);
 
@@ -128,7 +128,7 @@ namespace AuthServer.Service.Services
             return userList;
         }
 
-        private IEnumerable<Claim> GetClaimsByClient(Client client)
+        private IEnumerable<Claim> GetClaimsByClient(ClientTokenOption client)
         {
             var claims = new List<Claim>();
 

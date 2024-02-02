@@ -1,4 +1,5 @@
-﻿using AuthServer.Core.DTOs;
+﻿using AuthServer.Core.CommonDTOs;
+using AuthServer.Core.DTOs;
 using AuthServer.Core.Entities;
 using AuthServer.Core.Models;
 using AuthServer.Core.Repositories;
@@ -7,7 +8,6 @@ using AuthServer.Core.UnitOfWork;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using SharedLibrary.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,13 +18,13 @@ namespace AuthServer.Service.Services
 {
     public class AuthenticationService : IAuthenticationService
     {
-        private readonly List<Client> _clients;
+        private readonly List<ClientTokenOption> _clients;
         private readonly ITokenService _tokenService;
         private readonly UserManager<UserApp> _userManager;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IGenericRepository<UserRefreshToken> _userRefreshTokenService;
 
-        public AuthenticationService(IOptions<List<Client>> optionsClient, ITokenService tokenService, UserManager<UserApp>
+        public AuthenticationService(IOptions<List<ClientTokenOption>> optionsClient, ITokenService tokenService, UserManager<UserApp>
             userManager, IUnitOfWork unitOfWork, IGenericRepository<UserRefreshToken> userRefreshTokenService)
         {
             _clients = optionsClient.Value;

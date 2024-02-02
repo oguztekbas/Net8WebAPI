@@ -11,7 +11,6 @@
           "AuthServer.Service": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.1",
           "Microsoft.EntityFrameworkCore.Design": "8.0.1",
-          "SharedLibrary": "1.0.0",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
@@ -961,8 +960,7 @@
       },
       "AuthServer.Core/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.1",
-          "SharedLibrary": "1.0.0"
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.1"
         },
         "runtime": {
           "AuthServer.Core.dll": {}
@@ -985,11 +983,6 @@
         },
         "runtime": {
           "AuthServer.Service.dll": {}
-        }
-      },
-      "SharedLibrary/1.0.0": {
-        "runtime": {
-          "SharedLibrary.dll": {}
         }
       }
     }
@@ -1592,11 +1585,6 @@
       "sha512": ""
     },
     "AuthServer.Service/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "SharedLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,5 +1,5 @@
-﻿using AuthServer.Core.DTOs;
-using SharedLibrary.DTOs;
+﻿using AuthServer.Core.CommonDTOs;
+using AuthServer.Core.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;

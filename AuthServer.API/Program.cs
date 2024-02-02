@@ -6,11 +6,11 @@ using AuthServer.Core.UnitOfWork;
 using AuthServer.Data;
 using AuthServer.Data.Repositories;
 using AuthServer.Data.UnitOfWork;
+using AuthServer.Service.CommonServices;
 using AuthServer.Service.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using SharedLibrary.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -66,7 +66,7 @@ builder.Services.AddAuthentication(options =>
 
         ValidIssuer = builder.Configuration.GetSection("TokenOption").Get<CustomTokenOption>().Issuer,
         ValidAudience = builder.Configuration.GetSection("TokenOption").Get<CustomTokenOption>().Audience[0],
-        IssuerSigningKey = SignService.GetSymmetricSecurityKey(builder.Configuration.GetSection("TokenOption").Get<CustomTokenOption>().SecurityKey),
+        IssuerSigningKey = CommonMethods.GetSymmetricSecurityKey(builder.Configuration.GetSection("TokenOption").Get<CustomTokenOption>().SecurityKey),
 
         ClockSkew = TimeSpan.Zero //
     };
@@ -75,7 +75,7 @@ builder.Services.AddAuthentication(options =>
 
 //OptionsPattern => appSettings'deki datayý C# objesi olarak kullanabilmek için
 builder.Services.Configure<CustomTokenOption>(builder.Configuration.GetSection("TokenOption"));
-builder.Services.Configure<List<Client>>(builder.Configuration.GetSection("Clients"));
+builder.Services.Configure<List<ClientTokenOption>>(builder.Configuration.GetSection("Clients"));
 
 
 

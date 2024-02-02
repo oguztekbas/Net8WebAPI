@@ -1064,8 +1064,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.1",
-          "SharedLibrary": "1.0.0"
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.1"
         },
         "compile": {
           "bin/placeholder/AuthServer.Core.dll": {}
@@ -1088,19 +1087,6 @@
         "runtime": {
           "bin/placeholder/AuthServer.Data.dll": {}
         }
-      },
-      "SharedLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/SharedLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SharedLibrary.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       }
     }
   },
@@ -2909,11 +2895,6 @@
       "type": "project",
       "path": "../AuthServer.Data/AuthServer.Data.csproj",
       "msbuildProject": "../AuthServer.Data/AuthServer.Data.csproj"
-    },
-    "SharedLibrary/1.0.0": {
-      "type": "project",
-      "path": "../SharedLibrary/SharedLibrary.csproj",
-      "msbuildProject": "../SharedLibrary/SharedLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {

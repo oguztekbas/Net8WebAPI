@@ -1,4 +1,4 @@
-﻿using SharedLibrary.DTOs;
+﻿using AuthServer.Core.CommonDTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;

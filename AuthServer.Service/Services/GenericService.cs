@@ -1,9 +1,9 @@
-﻿using AuthServer.Core.Repositories;
+﻿using AuthServer.Core.CommonDTOs;
+using AuthServer.Core.Repositories;
 using AuthServer.Core.Services;
 using AuthServer.Core.UnitOfWork;
 using AuthServer.Service.AutoMapper;
 using Microsoft.EntityFrameworkCore.ValueGeneration.Internal;
-using SharedLibrary.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
