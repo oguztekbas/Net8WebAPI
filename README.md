@@ -1,6 +1,6 @@
 # .NET8WebAPI
 
- Kullanılan teknoloji,teknik ve kütüphaneler:
+ Kullanılan teknoloji, teknik ve kütüphaneler:
 
 .Net 8 Web API - JWT - Repository Pattern ile Katmanlı Mimari - Depency Injection - Global Exception Handler - UnitOfWork - EF Core 8 - Migrations - Options Pattern - AutoMapper - Identity Framework
 
