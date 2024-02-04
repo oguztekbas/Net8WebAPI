@@ -2,3 +2,6 @@
 2-update-database
 burada hata çıktı 
 start projesinde bunu false olarak değiştir çözdü.<InvariantGlobalization>true</InvariantGlobalization>
+
+3-) update-database birOncekiMigrationIsmi  son migration'ı geri döndürmek istersen bir önceki mgirationismini yazarak update-database komutunu çalıştır.
+daha sonra remove-migration dersen son migration silinir.
