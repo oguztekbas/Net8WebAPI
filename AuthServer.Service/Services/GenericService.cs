@@ -91,7 +91,7 @@ namespace AuthServer.Service.Services
 
         public async Task<Response<IEnumerable<TDto>>> Where(Expression<Func<TEntity, bool>> predicate)
         {
-            var productsTEntity = _genericRepository.Where(predicate);
+            var productsTEntity = _genericRepository.Where(predicate).ToList();
 
             var productsTDto = ObjectMapper.Mapper.Map<IEnumerable<TDto>>(productsTEntity);
 
