@@ -3,6 +3,7 @@ using AuthServer.Core.Repositories;
 using AuthServer.Core.Services;
 using AuthServer.Core.UnitOfWork;
 using AuthServer.Service.AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ValueGeneration.Internal;
 using System;
 using System.Collections.Generic;
@@ -91,7 +92,7 @@ namespace AuthServer.Service.Services
 
         public async Task<Response<IEnumerable<TDto>>> Where(Expression<Func<TEntity, bool>> predicate)
         {
-            var productsTEntity = _genericRepository.Where(predicate).ToList();
+            var productsTEntity = await _genericRepository.Where(predicate).ToListAsync();
 
             var productsTDto = ObjectMapper.Mapper.Map<IEnumerable<TDto>>(productsTEntity);
 
