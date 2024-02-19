@@ -32,6 +32,11 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>)); //Generic olduðu için imp'i farklý.
 builder.Services.AddScoped(typeof(IGenericService<,>), typeof(GenericService<,>)); //Birden fazla tip alan Generic olduðu için <,> yaptýk.
 
+builder.Services.AddScoped<IBasketRepository, BasketRepository>();
+builder.Services.AddScoped<IBasketService, BasketService>();
+
+builder.Services.AddScoped<IBasketDetailRepository, BasketDetailRepository>();
+
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 // Add DBContext

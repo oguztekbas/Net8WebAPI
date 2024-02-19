@@ -16,8 +16,8 @@ namespace AuthServer.Service.Services
 {
     public class GenericService<TEntity, TDto> : IGenericService<TEntity, TDto> where TEntity : class where TDto : class
     {
-        private readonly IUnitOfWork _unitOfWork;
-        private readonly IGenericRepository<TEntity> _genericRepository;
+        protected readonly IUnitOfWork _unitOfWork;
+        protected readonly IGenericRepository<TEntity> _genericRepository;
 
         public GenericService(IUnitOfWork unitOfWork, IGenericRepository<TEntity> genericRepository)
         {

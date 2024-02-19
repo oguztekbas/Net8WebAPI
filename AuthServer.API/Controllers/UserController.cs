@@ -18,7 +18,7 @@ namespace AuthServer.API.Controllers
         }
 
         // api/user/register
-        //[Route("register")]
+        [Route("register")]
         [HttpPost]
         public async Task<IActionResult> CreateUser(CreateUserDto createUserDto)
         {

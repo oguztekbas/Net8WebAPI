@@ -1,5 +1,6 @@
 ﻿using AuthServer.Core.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,8 +15,9 @@ namespace AuthServer.Data.UnitOfWork
 
         public UnitOfWork(AppDbContext appDbContext)
         {
-                _context = appDbContext;
+            _context = appDbContext;
         }
+
         public void Commit()
         {
             _context.SaveChanges();
@@ -24,6 +26,21 @@ namespace AuthServer.Data.UnitOfWork
         public async Task CommitAsync()
         {
             await _context.SaveChangesAsync();
+        }
+
+        public void Rollback()
+        {
+            _context.Database.RollbackTransaction();
+        }
+
+        public async Task RollbackAsync()
+        {
+            await _context.Database.RollbackTransactionAsync();
+        }
+
+        public DbContext GetDbContext()
+        {
+            return _context;
         }
     }
 }

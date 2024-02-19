@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,5 +13,9 @@ namespace AuthServer.Core.UnitOfWork
     {
         Task CommitAsync(); 
         void Commit();
+        Task RollbackAsync();
+        void Rollback();
+
+        DbContext GetDbContext();
     }
 }

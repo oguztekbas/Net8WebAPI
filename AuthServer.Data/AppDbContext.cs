@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,20 +23,26 @@ namespace AuthServer.Data
         //public DbSet<UserApp> Users yapmadık çünkü Identity Framework'ünden geliyor zaten bunlar.
         //Bir çok tablo geliyor Users,Roles,UserRoles gibi..
         public DbSet<Product> Products { get; set; }
+        public DbSet<Basket> Basket { get; set; }
+        public DbSet<BasketDetail> BasketDetail { get; set; }
         public DbSet<UserRefreshToken> UserRefreshTokens { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            builder.Entity<Product>().HasKey(x => x.Id);
+
             builder.Entity<Product>().Property(x => x.Name).IsRequired().HasMaxLength(200);
-            builder.Entity<Product>().Property(x => x.Stock).IsRequired();
             builder.Entity<Product>().Property(x => x.Price).HasColumnType("decimal(18,2)");
-            builder.Entity<Product>().Property(x => x.UserId).IsRequired();
+            builder.Entity<Product>().HasIndex(x => x.Code).IsUnique();
 
             builder.Entity<UserRefreshToken>().HasKey(x => x.UserId);
             builder.Entity<UserRefreshToken>().Property(x => x.Code).IsRequired().HasMaxLength(200);
 
-            builder.Entity<UserApp>().Property(x => x.City).HasMaxLength(200);
+            builder.Entity<BasketDetail>().HasKey(x => new
+            {
+                x.BasketId,
+                x.ProductId
+            });
+
 
             base.OnModelCreating(builder);
         }

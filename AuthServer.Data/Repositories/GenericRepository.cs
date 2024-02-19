@@ -10,8 +10,8 @@ namespace AuthServer.Data.Repositories
 {
     public class GenericRepository<TEntity> : Core.Repositories.IGenericRepository<TEntity> where TEntity : class
     {
-        private readonly DbContext _context;
-        private readonly DbSet<TEntity> _dbSet;
+        protected readonly DbContext _context;
+        protected readonly DbSet<TEntity> _dbSet;
 
         public GenericRepository(AppDbContext context)
         {
@@ -20,10 +20,14 @@ namespace AuthServer.Data.Repositories
         }
 
 
-
         public async Task AddAsync(TEntity entity)
         {
             await _dbSet.AddAsync(entity);
+        }
+
+        public async Task AddRangeAsync(IEnumerable<TEntity> entities)
+        {
+            await _dbSet.AddRangeAsync(entities);
         }
 
         public async Task<IEnumerable<TEntity>> GetAllAsync()

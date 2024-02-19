@@ -23,4 +23,8 @@
     <ProjectReference Include="..\AuthServer.Core\AuthServer.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>
