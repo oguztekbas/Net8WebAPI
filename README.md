@@ -7,11 +7,8 @@
 - Katmanlı Mimari yapısında, Generic Repository Pattern ve .Net 8 kullanan, JWT token dağıtan, Basic bir WEB API şablonu.
 - Hem email ve password ile login amaçlı request gönderen ve token isteyen bir client için hem de üyelik sistemi gerektirmeyen ancak güvenlik için token isteyen, clientId ve clientSecret bilgileriyle gelen bir client için (Örn: Hava durumu Client app'i) token dağıtan API 
 
-
-
-
-
-
+**********************************************************
+**********************************************************
 - API => Ana projemiz - Controller kısımları sade yazıldı. Kod yükü diğer katmanlarda sadece program.cs'te Depency Injection'lar ve configler var  ---  Service katmanını referans alır.
 - Service => Business Logic ve Validation işlemleri ---  Data katmanını referans alır
 - Data => DB'ye erişim, sorgular ve migrationlar
