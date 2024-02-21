@@ -15,4 +15,5 @@
 - Core => Interface ve class'lar
 
 
-- AccessToken RefreshToken RevokeRefreshToken
+**********************************************************
+- AccessToken RefreshToken RevokeRefreshToken işlemleri
