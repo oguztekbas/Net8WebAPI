@@ -7,7 +7,7 @@ using AuthServer.Core.UnitOfWork;
 using AuthServer.Data;
 using AuthServer.Data.Repositories;
 using AuthServer.Data.UnitOfWork;
-using AuthServer.Service.CommonServices;
+using AuthServer.Service.HelperMethods;
 using AuthServer.Service.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -74,7 +74,7 @@ builder.Services.AddAuthentication(options =>
 
         ValidIssuer = builder.Configuration.GetSection("TokenOption").Get<CustomTokenOption>().Issuer,
         ValidAudience = builder.Configuration.GetSection("TokenOption").Get<CustomTokenOption>().Audience[0],
-        IssuerSigningKey = CommonMethods.GetSymmetricSecurityKey(builder.Configuration.GetSection("TokenOption").Get<CustomTokenOption>().SecurityKey),
+        IssuerSigningKey = SecurityMethods.GetSymmetricSecurityKey(builder.Configuration.GetSection("TokenOption").Get<CustomTokenOption>().SecurityKey),
 
         ClockSkew = TimeSpan.Zero //
     };

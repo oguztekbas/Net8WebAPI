@@ -4,6 +4,7 @@ using AuthServer.Core.Entities;
 using AuthServer.Core.Repositories;
 using AuthServer.Core.Services;
 using AuthServer.Core.UnitOfWork;
+using AuthServer.Service.HelperMethods;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -71,7 +72,28 @@ namespace AuthServer.Service.Services
         // için önemli bir durum.veri tutarlılığı açısından.
         public async Task<Response<NoDataDto>> AddBasketWithBasketDetails(BasketDto basketDto)
         {
-            using(var transaction = await _unitOfWork.GetDbContext().Database.BeginTransactionAsync()) 
+            #region IsValidBasketDto
+
+            if (basketDto.IPAdress == null || !SecurityMethods.ValidateIPv4(basketDto.IPAdress))
+            {
+                return Response<NoDataDto>.Fail("IP Address is wrong", 400, false);
+            }
+            else if (basketDto.Address == null || basketDto.Address.Length > 60)
+            {
+                return Response<NoDataDto>.Fail("Address is wrong", 400, false);
+            }
+            else if(basketDto.UserId == null)
+            {
+                return Response<NoDataDto>.Fail("UserId is wrong", 400, false);
+            }
+            else if (basketDto.BasketDetails == null || basketDto.BasketDetails.Count < 1)
+            {
+                return Response<NoDataDto>.Fail("BasketDetails is required", 400, false);
+            }
+
+            #endregion
+
+            using (var transaction = await _unitOfWork.GetDbContext().Database.BeginTransactionAsync()) 
             {
                 Basket basket = new Basket()
                 {
