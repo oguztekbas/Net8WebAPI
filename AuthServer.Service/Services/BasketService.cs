@@ -13,15 +13,19 @@ using System.Threading.Tasks;
 
 namespace AuthServer.Service.Services
 {
-    public class BasketService : GenericService<Basket, BasketDto>, IBasketService
+    public class BasketService : IBasketService
     {
         private readonly IBasketRepository _basketRepository;
         private readonly IBasketDetailRepository _basketDetailRepository;
+        protected readonly IUnitOfWork _unitOfWork;
+        protected readonly IGenericRepository<Basket> _genericRepository;
 
-        public BasketService(IGenericRepository<Basket> genericRepository, IUnitOfWork unitOfWork, IBasketRepository basketRepository, IBasketDetailRepository basketDetailRepository) : base(unitOfWork, genericRepository)
+        public BasketService(IGenericRepository<Basket> genericRepository, IUnitOfWork unitOfWork, IBasketRepository basketRepository, IBasketDetailRepository basketDetailRepository)
         {
             _basketRepository = basketRepository;
             _basketDetailRepository = basketDetailRepository;
+            _unitOfWork = unitOfWork;
+            _genericRepository = genericRepository;
         }
 
         public async Task<Response<IEnumerable<BasketDto>>> GetBasketsWithBasketDetails(string userId)
@@ -59,15 +63,14 @@ namespace AuthServer.Service.Services
             return Response<IEnumerable<BasketDto>>.Success(dtoBaskets, 200);
         }
 
+        // burayı transaction içine almamızın sebebi:
+        // Basketleri db ye ekleyip savechanges yapıcaz gelen id'yi kullanıp basketdetails'ları ekleyecez
+        // bu yüzden 2 tane ayrı savechangesvar ilkinde hata var ise veya ikincisinde rollback olunması gerekir
+        // eğer bir hata olursa zaten commit metodundan exception dönecek ve global exception yakalayıcı
+        // yakalayıp 500 dönecek. Bu tarz durumlar için yani aynı yerde birbirine bağımlı 2 saveChanges'ler 
+        // için önemli bir durum.veri tutarlılığı açısından.
         public async Task<Response<NoDataDto>> AddBasketWithBasketDetails(BasketDto basketDto)
         {
-            // burayı transaction içine almamızın sebebi:
-            // Basketleri db ye ekleyip savechanges yapıcaz gelen id'yi kullanıp basketdetails'ları ekleyecez
-            // bu yüzden 2 tane ayrı savechangesvar ilkinde hata var ise veya ikincisinde rollback olunması gerekir
-            // eğer bir hata olursa zaten commit metodundan exception dönecek ve global exception yakalayıcı
-            // yakalayıp 500 dönecek. Bu tarz durumlar için yani aynı yerde birbirine bağımlı 2 saveChanges'ler 
-            // için önemli bir durum.veri tutarlılığı açısından.
-
             using(var transaction = await _unitOfWork.GetDbContext().Database.BeginTransactionAsync()) 
             {
                 Basket basket = new Basket()

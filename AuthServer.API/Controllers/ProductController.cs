@@ -12,9 +12,9 @@ namespace AuthServer.API.Controllers
     [ApiController]
     public class ProductController : CustomBaseController
     {
-        private readonly IGenericService<Product, ProductDto> _productService;
+        private readonly IProductService _productService;
 
-        public ProductController(IGenericService<Product, ProductDto> productService)
+        public ProductController(IProductService productService)
         {
                 _productService = productService;
         }

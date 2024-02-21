@@ -25,12 +25,14 @@ var builder = WebApplication.CreateBuilder(args);
 // AddTransient => Ayný istekte birden fazla ayný interface ile karþýlaþýrsa yeni bir object örneði kullanýr.,
 // AddSignleton => Uygulama boyunca tek bir object örneðini kullanýr.
 
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>)); //Generic olduðu için imp'i farklý.
+//builder.Services.AddScoped(typeof(IGenericService<,>), typeof(GenericService<,>)); //Birden fazla tip alan Generic olduðu için <,> yaptýk.
+
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 
-builder.Services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>)); //Generic olduðu için imp'i farklý.
-builder.Services.AddScoped(typeof(IGenericService<,>), typeof(GenericService<,>)); //Birden fazla tip alan Generic olduðu için <,> yaptýk.
+builder.Services.AddScoped<IProductService, ProductService>();
 
 builder.Services.AddScoped<IBasketRepository, BasketRepository>();
 builder.Services.AddScoped<IBasketService, BasketService>();
@@ -106,7 +108,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 //------------------------------------------------------------ Authentication middleware eklendi.
 app.UseAuthentication();

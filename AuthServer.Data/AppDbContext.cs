@@ -30,18 +30,24 @@ namespace AuthServer.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
 
-            builder.Entity<Product>().Property(x => x.Name).IsRequired().HasMaxLength(200);
+            builder.Entity<Product>().Property(x => x.Name).IsRequired().HasMaxLength(40);
             builder.Entity<Product>().Property(x => x.Price).HasColumnType("decimal(18,2)");
             builder.Entity<Product>().HasIndex(x => x.Code).IsUnique();
+            builder.Entity<Product>().Property(x => x.Code).IsRequired().HasMaxLength(40);
 
-            builder.Entity<UserRefreshToken>().HasKey(x => x.UserId);
-            builder.Entity<UserRefreshToken>().Property(x => x.Code).IsRequired().HasMaxLength(200);
+            builder.Entity<Basket>().Property(x => x.IPAdress).IsRequired().HasMaxLength(16);
+            builder.Entity<Basket>().Property(x => x.Address).IsRequired().HasMaxLength(60);
+            builder.Entity<Basket>().Property(x => x.Date).IsRequired();
+            builder.Entity<Basket>().Property(x => x.UserId).IsRequired();
 
             builder.Entity<BasketDetail>().HasKey(x => new
             {
                 x.BasketId,
                 x.ProductId
             });
+
+            builder.Entity<UserRefreshToken>().HasKey(x => x.UserId);
+            builder.Entity<UserRefreshToken>().Property(x => x.Code).IsRequired().HasMaxLength(200);
 
 
             base.OnModelCreating(builder);

@@ -22,16 +22,16 @@ namespace AuthServer.Service.Services
         private readonly ITokenService _tokenService;
         private readonly UserManager<UserApp> _userManager;
         private readonly IUnitOfWork _unitOfWork;
-        private readonly IGenericRepository<UserRefreshToken> _userRefreshTokenService;
+        private readonly IGenericRepository<UserRefreshToken> _userRefreshTokenRepository;
 
         public AuthenticationService(IOptions<List<ClientTokenOption>> optionsClient, ITokenService tokenService, UserManager<UserApp>
-            userManager, IUnitOfWork unitOfWork, IGenericRepository<UserRefreshToken> userRefreshTokenService)
+            userManager, IUnitOfWork unitOfWork, IGenericRepository<UserRefreshToken> userRefreshTokenRepository)
         {
             _clients = optionsClient.Value;
             _tokenService = tokenService;
             _userManager = userManager;
             _unitOfWork = unitOfWork;
-            _userRefreshTokenService = userRefreshTokenService;
+            _userRefreshTokenRepository = userRefreshTokenRepository;
         }
 
         public async Task<Response<TokenDto>> CreateAccessTokenAsync(LoginDto loginDto)
@@ -55,7 +55,7 @@ namespace AuthServer.Service.Services
 
             var token = _tokenService.CreateToken(user);
 
-            var userRefreshToken = await _userRefreshTokenService.Where(i => i.UserId == user.Id).FirstOrDefaultAsync();
+            var userRefreshToken = await _userRefreshTokenRepository.Where(i => i.UserId == user.Id).FirstOrDefaultAsync();
 
             // Token almak için request geldi. Token'ı yarattık token içinde refreshToken'ı da dönüyorsun
             // Ancak db'deki durumunu kontrol etmelisin. Db'de kaydı yoksa ekleme işlemi yap.
@@ -63,7 +63,7 @@ namespace AuthServer.Service.Services
             
             if (userRefreshToken == null)
             {
-                await _userRefreshTokenService.AddAsync(new UserRefreshToken
+                await _userRefreshTokenRepository.AddAsync(new UserRefreshToken
                 {
                     UserId = user.Id,
                     Code = token.RefreshToken,
@@ -86,7 +86,7 @@ namespace AuthServer.Service.Services
         // Bu kontrolden sonra yeni bir token yaratıp yolluyoruz.
         public async Task<Response<TokenDto>> CreateAccessTokenByRefreshToken(string refreshToken)
         {
-            var existRefreshToken = await _userRefreshTokenService.Where(i => i.Code == refreshToken).FirstOrDefaultAsync();
+            var existRefreshToken = await _userRefreshTokenRepository.Where(i => i.Code == refreshToken).FirstOrDefaultAsync();
 
             if(existRefreshToken == null)
             {
@@ -131,14 +131,14 @@ namespace AuthServer.Service.Services
         // veya her hangi bir durumda da token bilgisinin ele geçildiği bilinirse kullanılabilir.
         public async Task<Response<NoDataDto>> RevokeRefreshToken(string refreshToken)
         {
-            var existRefreshToken = await _userRefreshTokenService.Where(i => i.Code == refreshToken).FirstOrDefaultAsync();
+            var existRefreshToken = await _userRefreshTokenRepository.Where(i => i.Code == refreshToken).FirstOrDefaultAsync();
 
             if(existRefreshToken == null)
             {
                 return Response<NoDataDto>.Fail("Refresh token not found", 404, true);
             }
 
-            _userRefreshTokenService.Remove(existRefreshToken);
+            _userRefreshTokenRepository.Remove(existRefreshToken);
 
             await _unitOfWork.CommitAsync();
 

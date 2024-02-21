@@ -32,14 +32,16 @@ namespace AuthServer.Data.Migrations
 
                     b.Property<string>("Address")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(60)
+                        .HasColumnType("nvarchar(60)");
 
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("IPAdress")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(16)
+                        .HasColumnType("nvarchar(16)");
 
                     b.Property<string>("UserId")
                         .IsRequired()
@@ -47,7 +49,7 @@ namespace AuthServer.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Basket", (string)null);
+                    b.ToTable("Basket");
                 });
 
             modelBuilder.Entity("AuthServer.Core.Entities.BasketDetail", b =>
@@ -68,7 +70,7 @@ namespace AuthServer.Data.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("BasketDetail", (string)null);
+                    b.ToTable("BasketDetail");
                 });
 
             modelBuilder.Entity("AuthServer.Core.Entities.Product", b =>
@@ -81,12 +83,13 @@ namespace AuthServer.Data.Migrations
 
                     b.Property<string>("Code")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
@@ -96,7 +99,7 @@ namespace AuthServer.Data.Migrations
                     b.HasIndex("Code")
                         .IsUnique();
 
-                    b.ToTable("Products", (string)null);
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("AuthServer.Core.Entities.UserApp", b =>
@@ -179,7 +182,7 @@ namespace AuthServer.Data.Migrations
 
                     b.HasKey("UserId");
 
-                    b.ToTable("UserRefreshTokens", (string)null);
+                    b.ToTable("UserRefreshTokens");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

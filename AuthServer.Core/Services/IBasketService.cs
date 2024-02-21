@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace AuthServer.Core.Services
 {
-    public interface IBasketService : IGenericService<Basket, BasketDto>
+    public interface IBasketService
     {
         Task<Response<IEnumerable<BasketDto>>> GetBasketsWithBasketDetails(string userId);
         Task<Response<NoDataDto>> AddBasketWithBasketDetails(BasketDto basketDto);
