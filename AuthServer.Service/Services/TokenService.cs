@@ -118,9 +118,9 @@ namespace AuthServer.Service.Services
         {
             var userList = new List<Claim>
             {
-                new Claim(ClaimTypes.NameIdentifier,userApp.Id),
+                new Claim("userId",userApp.Id),
                 new Claim(JwtRegisteredClaimNames.Email,userApp.Email),
-                new Claim(ClaimTypes.Name, userApp.UserName),
+                new Claim("name", userApp.UserName),
                 new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString()) //Her token için numara
             };
 
