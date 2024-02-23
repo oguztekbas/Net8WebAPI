@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuthServer.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f21a3f6c2de56f1fdf52ed99f44f2ee21d072e33")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26d09c2e915fdb1df3b183ad6de5cc70703b1198")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuthServer.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuthServer.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

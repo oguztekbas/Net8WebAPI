@@ -48,6 +48,7 @@ namespace AuthServer.Service.Services
                 TotalPrice = i.BasketDetails.Sum(i => i.Price * i.Quantity),
                 BasketDetails = i.BasketDetails.Select(x => new BasketDetailDto
                 {
+                    BasketId = x.BasketId,
                     Price = x.Price,
                     Quantity = x.Quantity,
                     ProductId = x.ProductId,
