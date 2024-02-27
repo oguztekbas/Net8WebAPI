@@ -17,3 +17,7 @@
 
 **********************************************************
 - AccessToken RefreshToken RevokeRefreshToken işlemleri
+
+# Eklenecekler
+*****************************************
+Redis, ElasticSearch ve SeriLog ile Loglama
