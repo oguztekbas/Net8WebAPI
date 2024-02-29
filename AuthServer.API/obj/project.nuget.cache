@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/nUyQ0uqN+XeUb55kOODA6RKTtp2NnehIGBU91/oN2RsM9lOItkhhzXzRFzjK4NOAvg4SVN332AcLsOitczczw==",
+  "dgSpecHash": "4wcclETpTyNkr0+BXo3sSRUG+GAz48nBNxUymvPrYBGWdtyuvrmJ+hQlvfyKzXXe/JKMCaw6Y1Rnht/H8X1xjQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\oguzt\\OneDrive\\Desktop\\proje\\AuthServer\\AuthServer.API\\AuthServer.API.csproj",
   "expectedPackageFiles": [
@@ -52,6 +52,8 @@
     "C:\\Users\\oguzt\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\oguzt\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\oguzt\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\oguzt\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "C:\\Users\\oguzt\\.nuget\\packages\\stackexchange.redis\\2.7.27\\stackexchange.redis.2.7.27.nupkg.sha512",
     "C:\\Users\\oguzt\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\oguzt\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\oguzt\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",

@@ -9,6 +9,6 @@ namespace AuthServer.Core.Repositories
 {
     public interface IBasketRepository : IGenericRepository<Basket>
     {
-        IQueryable<Basket> GetBasketsWithBasketDetails(string userId);
+        Task<IQueryable<Basket>> GetBasketsWithBasketDetails(string userId);
     }
 }

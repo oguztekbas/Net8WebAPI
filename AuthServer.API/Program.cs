@@ -1,4 +1,5 @@
 using AuthServer.API.Extensions;
+using AuthServer.Cache;
 using AuthServer.Core.Entities;
 using AuthServer.Core.Models;
 using AuthServer.Core.Repositories;
@@ -86,7 +87,10 @@ builder.Services.Configure<CustomTokenOption>(builder.Configuration.GetSection("
 builder.Services.Configure<List<ClientTokenOption>>(builder.Configuration.GetSection("Clients"));
 
 
-
+builder.Services.AddSingleton<RedisService>(sp =>
+{
+    return new RedisService(builder.Configuration.GetSection("CacheOptions:Url").Value);
+});
 
 
 ////////////////////////////////////////////////////////////////////////////////////////

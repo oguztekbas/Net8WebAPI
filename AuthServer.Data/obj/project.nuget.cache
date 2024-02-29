@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "khgrJ/s1RBRZadhSMXZ7mbxhJfvb2SQiuQHdPQ1LCTDKglDsiO2nU3urzjNIma5blWwThYLsPlOFVEjdOIe7+Q==",
+  "dgSpecHash": "Vmchc/KVJ8tdn547h9EpgjqDLcCQn08fZ+lFbC5xQPLatKHcIqzgO1dnVoaZEtRElFE1nz8gqkmnPmwLwscJ5w==",
   "success": true,
   "projectFilePath": "C:\\Users\\oguzt\\OneDrive\\Desktop\\proje\\AuthServer\\AuthServer.Data\\AuthServer.Data.csproj",
   "expectedPackageFiles": [
@@ -51,6 +51,8 @@
     "C:\\Users\\oguzt\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\oguzt\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\oguzt\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\oguzt\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "C:\\Users\\oguzt\\.nuget\\packages\\stackexchange.redis\\2.7.27\\stackexchange.redis.2.7.27.nupkg.sha512",
     "C:\\Users\\oguzt\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\oguzt\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\oguzt\\.nuget\\packages\\system.composition\\6.0.0\\system.composition.6.0.0.nupkg.sha512",

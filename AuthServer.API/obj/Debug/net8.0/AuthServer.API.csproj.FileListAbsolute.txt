@@ -149,3 +149,7 @@ C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\obj\Debug\net8.0
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\obj\Debug\net8.0\AuthServer.API.pdb
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\obj\Debug\net8.0\AuthServer.API.genruntimeconfig.cache
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\obj\Debug\net8.0\ref\AuthServer.API.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\bin\Debug\net8.0\StackExchange.Redis.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\bin\Debug\net8.0\AuthServer.Cache.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\bin\Debug\net8.0\AuthServer.Cache.pdb

@@ -1,0 +1,13 @@
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Cache\bin\Debug\net8.0\AuthServer.Cache.deps.json
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Cache\bin\Debug\net8.0\AuthServer.Cache.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Cache\bin\Debug\net8.0\AuthServer.Cache.pdb
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Cache\obj\Debug\net8.0\AuthServer.Cache.csproj.AssemblyReference.cache
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Cache\obj\Debug\net8.0\AuthServer.Cache.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Cache\obj\Debug\net8.0\AuthServer.Cache.AssemblyInfoInputs.cache
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Cache\obj\Debug\net8.0\AuthServer.Cache.AssemblyInfo.cs
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Cache\obj\Debug\net8.0\AuthServer.Cache.csproj.CoreCompileInputs.cache
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Cache\obj\Debug\net8.0\AuthServer.Cache.sourcelink.json
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Cache\obj\Debug\net8.0\AuthServer.Cache.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Cache\obj\Debug\net8.0\refint\AuthServer.Cache.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Cache\obj\Debug\net8.0\AuthServer.Cache.pdb
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Cache\obj\Debug\net8.0\ref\AuthServer.Cache.dll

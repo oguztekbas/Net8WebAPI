@@ -17,7 +17,7 @@ namespace AuthServer.Data.Repositories
 
         }
 
-        public IQueryable<Basket> GetBasketsWithBasketDetails(string userId)
+        public async Task<IQueryable<Basket>> GetBasketsWithBasketDetails(string userId)
         {
             var basketsWithBasketDetails =  _dbSet.Where(i => i.UserId == userId)
                 .Include(i => i.BasketDetails)

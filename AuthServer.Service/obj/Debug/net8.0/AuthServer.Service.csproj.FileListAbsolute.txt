@@ -16,3 +16,5 @@ C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Service\obj\Debug\ne
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Service\obj\Debug\net8.0\refint\AuthServer.Service.dll
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Service\obj\Debug\net8.0\AuthServer.Service.pdb
 C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Service\obj\Debug\net8.0\ref\AuthServer.Service.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Service\bin\Debug\net8.0\AuthServer.Cache.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.Service\bin\Debug\net8.0\AuthServer.Cache.pdb
