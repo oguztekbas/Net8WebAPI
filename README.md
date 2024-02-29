@@ -7,7 +7,7 @@
 # => Redis Caching - UnitOfWork - Entity Framework Core - Migrations - Identity Framework - Options Pattern - AutoMapper
 
 **********************************************************
-- Katmanlı Mimari yapısında, Generic Repository Pattern ve .Net 8 kullanan, JWT token dağıtan, Basic bir WEB API şablonu.
+- Katmanlı Mimari yapısında, Generic Repository Pattern ve .Net 8 kullanan, JWT token dağıtan ve Redis Caching kullanan Basic bir WEB API şablonu.
 - Hem email ve password ile login amaçlı request gönderen ve token isteyen bir client için hem de üyelik sistemi gerektirmeyen ancak güvenlik için token isteyen, clientId ve clientSecret bilgileriyle gelen bir client için (Örn: Hava durumu Client app'i) token dağıtan API 
 
 
