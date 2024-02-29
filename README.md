@@ -28,6 +28,6 @@
 
 # Eklenecekler
 *****************************************
-ElasticSearch ve SeriLog ile Loglama
+- ElasticSearch ve SeriLog ile Loglama
 *****************************************
-RabbitMq ile email gönderme işlemi
+- RabbitMq ile email gönderme işlemi
