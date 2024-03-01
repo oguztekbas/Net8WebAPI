@@ -7,6 +7,7 @@ using AuthServer.Core.Services;
 using AuthServer.Core.UnitOfWork;
 using AuthServer.Service.HelperMethods;
 using Microsoft.EntityFrameworkCore;
+using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,8 +25,9 @@ namespace AuthServer.Service.Services
         private readonly IBasketDetailRepository _basketDetailRepository;
         protected readonly IUnitOfWork _unitOfWork;
 
-        private const string _basketKeyForRedis = "basketsCache";
+        private string _basketKeyForRedis = "basketsCache";
         private readonly RedisService _redisService;
+        private readonly IDatabase _redisDB;
 
         public BasketService(IUnitOfWork unitOfWork, IBasketRepository basketRepository, IBasketDetailRepository basketDetailRepository, RedisService redisService)
         {
@@ -33,17 +35,20 @@ namespace AuthServer.Service.Services
             _basketDetailRepository = basketDetailRepository;
             _unitOfWork = unitOfWork;
             _redisService = redisService;
+            _redisDB = _redisService.GetDb();
         }
 
         public async Task<Response<IEnumerable<BasketDto>>> GetBasketsWithBasketDetails(string userId)
         {
+            this.SetBasketKeyByUserId(userId);
+
             if (string.IsNullOrEmpty(userId))
             {
                 return Response<IEnumerable<BasketDto>>.Fail("userId is wrong", 400, true);
             }
 
             // Rediste varsa Cache'den al
-            if (await _redisService.GetDb().KeyExistsAsync(_basketKeyForRedis))
+            if (await _redisDB.KeyExistsAsync(_basketKeyForRedis))
             {
                 return Response<IEnumerable<BasketDto>>.Success(await GetBasketsFromCacheAsync(), 200);
             } // Rediste yoksa SQL'den al.
@@ -136,20 +141,24 @@ namespace AuthServer.Service.Services
 
                 await transaction.CommitAsync();
 
-
+                this.SetBasketKeyByUserId(basket.UserId);
                 await LoadBasketToCacheAsync(basket);
 
                 return Response<NoDataDto>.Success(201);
             }
         }
 
+        #region CacheMethods
+
         //Sipariş listesini Redise yükle
         private async Task LoadBasketsToCacheAsync(IEnumerable<BasketDto> baskets)
         {
             foreach (var basket in baskets)
             {
-                await _redisService.GetDb().HashSetAsync(_basketKeyForRedis, basket.Id, JsonSerializer.Serialize(basket));
+                await _redisDB.HashSetAsync(_basketKeyForRedis , basket.Id, JsonSerializer.Serialize(basket));
             }
+
+            await _redisDB.KeyExpireAsync(_basketKeyForRedis, DateTime.Now.AddMinutes(2));
         }
 
         //Tek bir siparişi Redise yükle
@@ -173,14 +182,14 @@ namespace AuthServer.Service.Services
                 ProductName = x.Product.Name
             }).ToList();
 
-            await _redisService.GetDb().HashSetAsync(_basketKeyForRedis, basket.Id, JsonSerializer.Serialize(basket));
+            await _redisDB.HashSetAsync(_basketKeyForRedis, basket.Id, JsonSerializer.Serialize(basket));
         }
 
         //Sipariş Listesini Redisten al.
         private async Task<IEnumerable<BasketDto>> GetBasketsFromCacheAsync()
         {
             var baskets = new List<BasketDto>();
-            var cacheBaskets = await _redisService.GetDb().HashGetAllAsync(_basketKeyForRedis);
+            var cacheBaskets = await _redisDB.HashGetAllAsync(_basketKeyForRedis);
 
             foreach (var cacheBasket in cacheBaskets)
             {
@@ -190,5 +199,12 @@ namespace AuthServer.Service.Services
 
             return baskets;
         }
+
+        private void SetBasketKeyByUserId(string userId)
+        {
+            _basketKeyForRedis = _basketKeyForRedis + "/" + userId;
+        }
+
+        #endregion
     }
 }
