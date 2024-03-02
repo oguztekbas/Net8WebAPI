@@ -13,6 +13,10 @@ using AuthServer.Service.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
+using Serilog.Exceptions;
+using Serilog.Sinks.Elasticsearch;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -87,16 +91,39 @@ builder.Services.Configure<CustomTokenOption>(builder.Configuration.GetSection("
 builder.Services.Configure<List<ClientTokenOption>>(builder.Configuration.GetSection("Clients"));
 
 
+//RedisService constructor'u url parametresi beklediði için bu þekilde koyduk.
+//Parametreden string url yerine bi üstteki gibi OptionsPattern ile de alabilirdik
 builder.Services.AddSingleton<RedisService>(sp =>
 {
     return new RedisService(builder.Configuration.GetSection("CacheOptions:Url").Value);
 });
 
 
+
+// Serilog kýsýmlarý
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .Enrich.FromLogContext()
+    .WriteTo.Async(c => c.Console())
+    .CreateLogger();
+
+builder.Host.UseSerilog((context, configuration) =>
+{
+    configuration.Enrich.FromLogContext()
+        .ReadFrom.Configuration(context.Configuration);
+});
+
+//SeriLog mekanizmasýný Singleton olarak ekledin.
+builder.Services.AddSingleton(Log.Logger);
+
+
+
+
+
 ////////////////////////////////////////////////////////////////////////////////////////
-
-
-
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

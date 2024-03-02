@@ -1,0 +1,230 @@
+2024-03-02 16:03:53.964 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-02 16:03:54.565 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-02 16:03:54.568 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-02 16:03:54.568 +03:00 [INF Hosting environment: Development
+]2024-03-02 16:03:54.568 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-02 16:03:59.045 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger - null null
+]2024-03-02 16:03:59.404 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger - 301 0 null 370.7862ms
+]2024-03-02 16:03:59.420 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-02 16:03:59.547 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 127.4045ms
+]2024-03-02 16:03:59.757 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/swagger-ui.css - null null
+]2024-03-02 16:03:59.760 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/swagger-ui-bundle.js - null null
+]2024-03-02 16:03:59.766 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/swagger-ui-standalone-preset.js - null null
+]2024-03-02 16:03:59.768 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-02 16:03:59.768 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-02 16:04:00.077 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 308.6182ms
+]2024-03-02 16:04:00.306 +03:00 [INF Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+]2024-03-02 16:04:00.313 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/swagger-ui.css - 200 143943 text/css 556.0266ms
+]2024-03-02 16:04:00.323 +03:00 [INF Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+]2024-03-02 16:04:00.323 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 558.4451ms
+]2024-03-02 16:04:00.405 +03:00 [INF Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+]2024-03-02 16:04:00.405 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 645.116ms
+]2024-03-02 16:04:00.469 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 700.3109ms
+]2024-03-02 16:04:00.919 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-02 16:04:01.034 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/favicon-32x32.png - null null
+]2024-03-02 16:04:01.035 +03:00 [INF Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+]2024-03-02 16:04:01.035 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/favicon-32x32.png - 200 628 image/png 1.2341ms
+]2024-03-02 16:04:01.214 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 295.3567ms
+]2024-03-02 16:04:50.641 +03:00 [INF Request starting HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - application/json 72
+]2024-03-02 16:04:51.078 +03:00 [INF Executing endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 16:04:51.132 +03:00 [INF Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(AuthServer.Core.DTOs.LoginDto) on controller AuthServer.API.Controllers.AuthController (AuthServer.API).
+]2024-03-02 16:05:04.748 +03:00 [WRN Log with static {"Email":"oguztekbas0@gmail.com","Password":"Passwords12","$type":"LoginDto"}
+]2024-03-02 16:05:16.828 +03:00 [INF Executed DbCommand (173ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+]2024-03-02 16:05:17.387 +03:00 [INF Executed DbCommand (9ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Code], [u].[Expiration]
+FROM [UserRefreshTokens] AS [u]
+WHERE [u].[UserId] = @__user_Id_0
+]2024-03-02 16:05:17.632 +03:00 [INF Executed DbCommand (56ms) [Parameters=[@p2='?' (Size = 450), @p0='?' (Size = 200), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [UserRefreshTokens] SET [Code] = @p0, [Expiration] = @p1
+OUTPUT 1
+WHERE [UserId] = @p2;
+]2024-03-02 16:05:17.684 +03:00 [INF Executing ObjectResult, writing value of type 'AuthServer.Core.CommonDTOs.Response`1[[AuthServer.Core.DTOs.TokenDto, AuthServer.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+]2024-03-02 16:05:17.733 +03:00 [INF Executed action AuthServer.API.Controllers.AuthController.Login (AuthServer.API) in 26595.5319ms
+]2024-03-02 16:05:17.734 +03:00 [INF Executed endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 16:05:17.749 +03:00 [INF Request finished HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - 200 null application/json; charset=utf-8 27111.2443ms
+]2024-03-02 17:28:41.442 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-02 17:28:41.660 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-02 17:28:41.662 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-02 17:28:41.662 +03:00 [INF Hosting environment: Development
+]2024-03-02 17:28:41.662 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-02 17:28:42.638 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-02 17:28:42.880 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 252.217ms
+]2024-03-02 17:28:43.008 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-02 17:28:43.010 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 2.9129ms
+]2024-03-02 17:28:43.027 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-02 17:28:43.554 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 526.2797ms
+]2024-03-02 17:28:43.703 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-02 17:28:43.856 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 153.3667ms
+]2024-03-02 17:28:50.079 +03:00 [INF Request starting HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - application/json 72
+]2024-03-02 17:28:51.016 +03:00 [INF Executing endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 17:28:51.049 +03:00 [INF Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(AuthServer.Core.DTOs.LoginDto) on controller AuthServer.API.Controllers.AuthController (AuthServer.API).
+]2024-03-02 17:28:52.552 +03:00 [WRN Log with static {"Email":"oguztekbas0@gmail.com","Password":"Passwords12","$type":"LoginDto"}
+]2024-03-02 17:28:52.674 +03:00 [INF Executed action AuthServer.API.Controllers.AuthController.Login (AuthServer.API) in 1621.4819ms
+]2024-03-02 17:28:52.675 +03:00 [INF Executed endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 17:28:52.679 +03:00 [ERR An unhandled exception has occurred while executing the request.
+System.Exception: Login hatası aldık
+   at AuthServer.API.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\Controllers\AuthController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+]2024-03-02 17:28:52.682 +03:00 [ERR Custom Exception Handler => {"TargetSite":"Void MoveNext()","Message":"Login hatası aldık","Data":[],"InnerException":null,"HelpLink":null,"Source":"AuthServer.API","HResult":-2146233088,"StackTrace":"   at AuthServer.API.Controllers.AuthController.Login(LoginDto loginDto) in C:\\Users\\oguzt\\OneDrive\\Desktop\\proje\\AuthServer\\AuthServer.API\\Controllers\\AuthController.cs:line 28\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)","$type":"Exception"}
+]2024-03-02 17:28:52.722 +03:00 [INF Request finished HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - 500 null application/json 2642.7716ms
+]2024-03-02 17:35:47.790 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-02 17:35:48.278 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-02 17:35:48.282 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-02 17:35:48.283 +03:00 [INF Hosting environment: Development
+]2024-03-02 17:35:48.283 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-02 17:35:49.217 +03:00 [INF Request starting HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - application/json 72
+]2024-03-02 17:35:49.657 +03:00 [INF Executing endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 17:35:49.711 +03:00 [INF Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(AuthServer.Core.DTOs.LoginDto) on controller AuthServer.API.Controllers.AuthController (AuthServer.API).
+]2024-03-02 17:35:50.368 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-02 17:35:51.090 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 721.4705ms
+]2024-03-02 17:35:51.360 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-02 17:35:51.421 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-02 17:35:51.429 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 68.5473ms
+]2024-03-02 17:35:51.531 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 110.8906ms
+]2024-03-02 17:35:51.836 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-02 17:35:52.141 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 305.3105ms
+]2024-03-02 17:35:53.574 +03:00 [WRN Log with static {"Email":"oguztekbas0@gmail.com","Password":"Passwords12","$type":"LoginDto"}
+]2024-03-02 17:35:53.832 +03:00 [INF Executed action AuthServer.API.Controllers.AuthController.Login (AuthServer.API) in 4115.3222ms
+]2024-03-02 17:35:53.834 +03:00 [INF Executed endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 17:35:53.841 +03:00 [ERR An unhandled exception has occurred while executing the request.
+System.DivideByZeroException: Attempted to divide by zero.
+   at AuthServer.API.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\Controllers\AuthController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+]2024-03-02 17:35:53.845 +03:00 [ERR Custom Exception Handler => {"TargetSite":"Void MoveNext()","Message":"Attempted to divide by zero.","Data":[],"InnerException":null,"HelpLink":null,"Source":"AuthServer.API","HResult":-2147352558,"StackTrace":"   at AuthServer.API.Controllers.AuthController.Login(LoginDto loginDto) in C:\\Users\\oguzt\\OneDrive\\Desktop\\proje\\AuthServer\\AuthServer.API\\Controllers\\AuthController.cs:line 30\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)","$type":"DivideByZeroException"}
+]2024-03-02 17:35:53.932 +03:00 [INF Request finished HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - 500 null application/json 4751.5732ms
+]2024-03-02 17:38:01.184 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-02 17:38:01.743 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-02 17:38:01.746 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-02 17:38:01.746 +03:00 [INF Hosting environment: Development
+]2024-03-02 17:38:01.746 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-02 17:38:02.449 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-02 17:38:02.737 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 298.7316ms
+]2024-03-02 17:38:03.015 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-02 17:38:03.018 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-02 17:38:03.021 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 5.7671ms
+]2024-03-02 17:38:03.108 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 89.8918ms
+]2024-03-02 17:38:03.243 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-02 17:38:03.409 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 166.0339ms
+]2024-03-02 17:38:29.172 +03:00 [INF Request starting HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - application/json 72
+]2024-03-02 17:38:29.397 +03:00 [INF Executing endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 17:38:29.460 +03:00 [INF Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(AuthServer.Core.DTOs.LoginDto) on controller AuthServer.API.Controllers.AuthController (AuthServer.API).
+]2024-03-02 17:38:30.676 +03:00 [WRN Log with static {"Email":"oguztekbas0@gmail.com","Password":"Passwords12","$type":"LoginDto"}
+]2024-03-02 17:38:30.974 +03:00 [INF Executed action AuthServer.API.Controllers.AuthController.Login (AuthServer.API) in 1509.3074ms
+]2024-03-02 17:38:30.976 +03:00 [INF Executed endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 17:38:30.982 +03:00 [ERR An unhandled exception has occurred while executing the request.
+System.DivideByZeroException: Attempted to divide by zero.
+   at AuthServer.API.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\Controllers\AuthController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+]2024-03-02 17:38:30.987 +03:00 [ERR Custom Exception Handler => null
+]2024-03-02 17:38:31.018 +03:00 [INF Request finished HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - 500 null application/json 1852.635ms
+]2024-03-02 17:40:21.707 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-02 17:40:21.946 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-02 17:40:21.949 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-02 17:40:21.950 +03:00 [INF Hosting environment: Development
+]2024-03-02 17:40:21.950 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-02 17:40:24.300 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-02 17:40:24.603 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 316.0641ms
+]2024-03-02 17:40:24.678 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-02 17:40:24.678 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-02 17:40:24.683 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 5.585ms
+]2024-03-02 17:40:24.787 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 110.0084ms
+]2024-03-02 17:40:24.989 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-02 17:40:25.217 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 228.7403ms
+]2024-03-02 17:40:30.779 +03:00 [INF Request starting HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - application/json 72
+]2024-03-02 17:40:30.919 +03:00 [INF Executing endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 17:40:30.964 +03:00 [INF Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(AuthServer.Core.DTOs.LoginDto) on controller AuthServer.API.Controllers.AuthController (AuthServer.API).
+]2024-03-02 17:40:32.223 +03:00 [WRN Log with static {"Email":"oguztekbas0@gmail.com","Password":"Passwords12","$type":"LoginDto"}
+]2024-03-02 17:40:32.339 +03:00 [INF Executed action AuthServer.API.Controllers.AuthController.Login (AuthServer.API) in 1371.5175ms
+]2024-03-02 17:40:32.340 +03:00 [INF Executed endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 17:40:32.346 +03:00 [ERR An unhandled exception has occurred while executing the request.
+System.DivideByZeroException: Attempted to divide by zero.
+   at AuthServer.API.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\Controllers\AuthController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+]2024-03-02 17:40:32.349 +03:00 [ERR Custom Exception Handler => {"TargetSite":"Void MoveNext()","Message":"Attempted to divide by zero.","Data":[],"InnerException":null,"HelpLink":null,"Source":"AuthServer.API","HResult":-2147352558,"StackTrace":"   at AuthServer.API.Controllers.AuthController.Login(LoginDto loginDto) in C:\\Users\\oguzt\\OneDrive\\Desktop\\proje\\AuthServer\\AuthServer.API\\Controllers\\AuthController.cs:line 30\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)","$type":"DivideByZeroException"}
+]2024-03-02 17:40:32.393 +03:00 [INF Request finished HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - 500 null application/json 1614.6434ms
+]2024-03-02 18:38:04.506 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-02 18:38:04.836 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-02 18:38:04.839 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-02 18:38:04.839 +03:00 [INF Hosting environment: Development
+]2024-03-02 18:38:04.840 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-02 18:38:05.384 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-02 18:38:05.695 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 323.3732ms
+]2024-03-02 18:38:05.735 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-02 18:38:05.741 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-02 18:38:05.748 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 7.3833ms
+]2024-03-02 18:38:05.832 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 97.7787ms
+]2024-03-02 18:38:05.936 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-02 18:38:06.145 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 208.7931ms
+]2024-03-02 18:38:12.418 +03:00 [INF Request starting HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - application/json 72
+]2024-03-02 18:38:12.593 +03:00 [INF Executing endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 18:38:12.628 +03:00 [INF Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(AuthServer.Core.DTOs.LoginDto) on controller AuthServer.API.Controllers.AuthController (AuthServer.API).
+]2024-03-02 18:38:13.906 +03:00 [WRN Log with static {"Email":"oguztekbas0@gmail.com","Password":"Passwords12","$type":"LoginDto"}
+]2024-03-02 18:38:14.016 +03:00 [INF Executed action AuthServer.API.Controllers.AuthController.Login (AuthServer.API) in 1383.9796ms
+]2024-03-02 18:38:14.018 +03:00 [INF Executed endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 18:38:14.022 +03:00 [ERR An unhandled exception has occurred while executing the request.
+System.DivideByZeroException: Attempted to divide by zero.
+   at AuthServer.API.Controllers.AuthController.Login(LoginDto loginDto) in C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\Controllers\AuthController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+]2024-03-02 18:38:14.025 +03:00 [ERR Custom Exception Handler => {"TargetSite":"Void MoveNext()","Message":"Attempted to divide by zero.","Data":[],"InnerException":null,"HelpLink":null,"Source":"AuthServer.API","HResult":-2147352558,"StackTrace":"   at AuthServer.API.Controllers.AuthController.Login(LoginDto loginDto) in C:\\Users\\oguzt\\OneDrive\\Desktop\\proje\\AuthServer\\AuthServer.API\\Controllers\\AuthController.cs:line 30\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)","$type":"DivideByZeroException"}
+]2024-03-02 18:38:14.066 +03:00 [INF Request finished HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - 500 null application/json 1648.192ms
+]

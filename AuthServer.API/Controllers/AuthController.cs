@@ -2,6 +2,7 @@
 using AuthServer.Core.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace AuthServer.API.Controllers
 {
@@ -10,15 +11,24 @@ namespace AuthServer.API.Controllers
     public class AuthController : CustomBaseController
     {
         private readonly IAuthenticationService _authenticationService;
-        public AuthController(IAuthenticationService authenticationService)
+        private readonly Serilog.ILogger _logger;
+
+        public AuthController(IAuthenticationService authenticationService, Serilog.ILogger logger)
         {
-            _authenticationService = authenticationService;      
+            _authenticationService = authenticationService;  
+            _logger = logger;
         }
 
         // api/auth/login
         [HttpPost]
         public async Task<IActionResult> Login(LoginDto loginDto)
         {
+            Log.ForContext<AuthController>().Write(Serilog.Events.LogEventLevel.Warning, "Log with static {@person}", loginDto);
+
+            var a = 12;
+            var b = 0;
+            var c = a / b;
+
             var result = await _authenticationService.CreateAccessTokenAsync(loginDto);
 
             return ActionResultInstance(result); 

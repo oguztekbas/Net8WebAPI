@@ -1,0 +1,11 @@
+redis container ayağa kaldırma
+- docker run -d -p 6379:6379 --name rediscontainer redis
+
+projedeki dockor compose'ı yml dosyasını ayağa kaldırma
+-Desktop\proje\AuthServer\AuthServer.API> kısmına gelip cmd'den docker-compose up yazarak.
+
+elasticsearch url => http://localhost:9200
+kibana url => http://localhost:5601
+
+-elasticsearch index yaratma mesela appsettingsdeki patternin bu olsun authserver-app-
+authserver-app-* olarak yarat.

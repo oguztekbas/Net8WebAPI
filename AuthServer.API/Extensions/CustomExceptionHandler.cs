@@ -1,7 +1,8 @@
-﻿
-
+﻿using AuthServer.API.Controllers;
 using AuthServer.Core.CommonDTOs;
+using AuthServer.Core.DTOs;
 using Microsoft.AspNetCore.Diagnostics;
+using Serilog;
 using System.Text.Json;
 
 namespace AuthServer.API.Extensions
@@ -25,6 +26,8 @@ namespace AuthServer.API.Extensions
 
                         if (exception != null)
                         {
+                            Log.ForContext<AuthController>().Write(Serilog.Events.LogEventLevel.Error, "Custom Exception Handler => {@exception}", exception);
+
                             var response = Response<NoDataDto>.Fail(exception.Message, 500, false);
 
                             await context.Response.WriteAsync(JsonSerializer.Serialize(response));
