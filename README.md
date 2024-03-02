@@ -9,9 +9,7 @@
 # => Redis Caching - Request-Response and Global Exception Logging With SeriLog to ElasticSearch and File
 
 **********************************************************
-- Katmanlı Mimari yapısında, Generic Repository Pattern ve .Net 8 kullanan, JWT token dağıtan ve Redis Caching kullanan Basic bir WEB API şablonu.
-- Hem email ve password ile login amaçlı request gönderen ve token isteyen bir client için hem de üyelik sistemi gerektirmeyen ancak güvenlik için token isteyen, clientId ve clientSecret bilgileriyle gelen bir client için (Örn: Hava durumu Client app'i) token dağıtan API 
-
+- Katmanlı Mimari yapısında, Generic Repository Pattern, JWT token dağıtan, Redis Caching kullanan, SeriLog ile ElasticSearch'e log atma mekanizmasına sahip olan Basic bir .NET 8 WEB API şablonu.
 
 
 **********************************************************
@@ -30,6 +28,4 @@
 
 # Eklenecekler
 *****************************************
-- ElasticSearch ve SeriLog ile Loglama
-*****************************************
-- RabbitMq ile email gönderme işlemi
+- RabbitMQ ile email gönderme veya pdf creator işlemi
