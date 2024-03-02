@@ -4,7 +4,9 @@
 
 # => .Net 8 Web API - JWT - Repository Pattern ile Katmanlı Mimari - Depency Injection - Global Exception Handler
 **********************************************************
-# => Redis Caching - UnitOfWork - Entity Framework Core - Migrations - Identity Framework - Options Pattern - AutoMapper
+# => UnitOfWork - Entity Framework Core - Migrations - Identity Framework - Options Pattern - AutoMapper
+*********************************************************
+# => Redis Caching - Request-Response and Global Exception Logging With SeriLog to ElasticSearch and File
 
 **********************************************************
 - Katmanlı Mimari yapısında, Generic Repository Pattern ve .Net 8 kullanan, JWT token dağıtan ve Redis Caching kullanan Basic bir WEB API şablonu.
