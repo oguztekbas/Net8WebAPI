@@ -2,7 +2,7 @@
 
  Kullanılan teknoloji, teknik ve kütüphaneler:
 
-# => .Net 8 Web API - JWT - Repository Pattern ile Katmanlı Mimari - Depency Injection - Global Exception Handler
+# => .Net 8 Web API - JWT - Repository Pattern ile Katmanlı Mimari - Depency Injection - Global Exception Handler - Custom Middlewares
 **********************************************************
 # => UnitOfWork - Entity Framework Core - Migrations - Identity Framework - Options Pattern - AutoMapper
 *********************************************************
