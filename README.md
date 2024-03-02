@@ -9,7 +9,7 @@
 # => Redis Caching - Request-Response and Global Exception Logging With SeriLog to ElasticSearch and File
 
 **********************************************************
-- Katmanlı Mimari yapısında, Generic Repository Pattern, JWT token dağıtan, Redis Caching kullanan, SeriLog ile ElasticSearch'e log atma mekanizmasına sahip olan Basic bir .NET 8 WEB API şablonu.
+- Katmanlı Mimari ve Repository Pattern yapısında, JWT token dağıtan, Redis Distributed Cache kullanan, SeriLog ile ElasticSearch'e log atma mekanizmasına sahip olan Basic bir .NET 8 WEB API şablonu.
 - AccessToken RefreshToken RevokeRefreshToken işlemleri 
 
 **********************************************************
