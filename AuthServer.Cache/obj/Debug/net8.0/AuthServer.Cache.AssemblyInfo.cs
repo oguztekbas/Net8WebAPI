@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuthServer.Cache")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af30ab5ae21bce2714c5c5130f426d917ff89bb4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b988c3d00dd8180a819577ae0c08172f5ae8c70")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuthServer.Cache")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuthServer.Cache")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

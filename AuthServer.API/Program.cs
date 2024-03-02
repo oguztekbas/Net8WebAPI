@@ -139,17 +139,18 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-//app.UseHttpsRedirection();
+app.UseHttpsRedirection(); //Mobile için kapamýþtýn.
+
+//-------------
+app.UseHandleGlobalException();
+app.UseMiddleware<RequestResponseMiddleware>();
+//-------------
 
 //------------------------------------------------------------ Authentication middleware eklendi.
 app.UseAuthentication();
 //------------------------------------------------------------
 
 app.UseAuthorization();
-
-//--------------------------------------------------------- GlobalException middleware Extension'ý eklendi.
-app.UseHandleGlobalException();
-//---------------------------------------------------------
 
 
 app.MapControllers();

@@ -23,11 +23,9 @@ namespace AuthServer.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginDto loginDto)
         {
-            Log.ForContext<AuthController>().Write(Serilog.Events.LogEventLevel.Warning, "Log with static {@person}", loginDto);
-
-            var a = 12;
-            var b = 0;
-            var c = a / b;
+            //var a = 12;
+            //var b = 0;
+            //var c = a / b;
 
             var result = await _authenticationService.CreateAccessTokenAsync(loginDto);
 

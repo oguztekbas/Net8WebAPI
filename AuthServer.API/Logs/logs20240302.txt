@@ -227,4 +227,261 @@ System.DivideByZeroException: Attempted to divide by zero.
    at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
 ]2024-03-02 18:38:14.025 +03:00 [ERR Custom Exception Handler => {"TargetSite":"Void MoveNext()","Message":"Attempted to divide by zero.","Data":[],"InnerException":null,"HelpLink":null,"Source":"AuthServer.API","HResult":-2147352558,"StackTrace":"   at AuthServer.API.Controllers.AuthController.Login(LoginDto loginDto) in C:\\Users\\oguzt\\OneDrive\\Desktop\\proje\\AuthServer\\AuthServer.API\\Controllers\\AuthController.cs:line 30\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)\r\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)","$type":"DivideByZeroException"}
 ]2024-03-02 18:38:14.066 +03:00 [INF Request finished HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - 500 null application/json 1648.192ms
+]2024-03-02 21:35:02.512 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-02 21:35:02.913 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-02 21:35:02.918 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-02 21:35:02.920 +03:00 [INF Hosting environment: Development
+]2024-03-02 21:35:02.920 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-02 21:35:05.794 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-02 21:35:06.057 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 275.3872ms
+]2024-03-02 21:35:06.274 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-02 21:35:06.280 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 3.9314ms
+]2024-03-02 21:35:06.281 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-02 21:35:06.383 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 102.4986ms
+]2024-03-02 21:35:06.481 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-02 21:35:06.623 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 141.8913ms
+]2024-03-02 21:35:10.980 +03:00 [INF Request starting HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - application/json 72
+]2024-03-02 21:35:10.988 +03:00 [WRN Failed to determine the https port for redirect.
+]2024-03-02 21:35:10.993 +03:00 [INF Request => http 192.168.1.33:5118/api/auth/login  {
+    "email":"oguztekbas0@gmail.com",
+    "password":"Passwords12"
+}
+]2024-03-02 21:35:11.161 +03:00 [INF Executing endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 21:35:11.191 +03:00 [INF Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(AuthServer.Core.DTOs.LoginDto) on controller AuthServer.API.Controllers.AuthController (AuthServer.API).
+]2024-03-02 21:35:12.126 +03:00 [INF Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+]2024-03-02 21:35:12.146 +03:00 [INF Executed action AuthServer.API.Controllers.AuthController.Login (AuthServer.API) in 951.0642ms
+]2024-03-02 21:35:12.146 +03:00 [INF Executed endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 21:35:12.147 +03:00 [INF Response => Response {"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"loginDto":["The loginDto field is required."]},"traceId":"00-1004de83b8ea82842df72b7ca7f8ebbd-4eff8787a91ec218-00"}
+]2024-03-02 21:35:12.153 +03:00 [INF Request finished HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - 400 null application/problem+json; charset=utf-8 1173.2232ms
+]2024-03-02 21:36:10.837 +03:00 [INF Request starting HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - application/json 72
+]2024-03-02 21:36:10.860 +03:00 [INF Request => http 192.168.1.33:5118/api/auth/login  {
+    "email":"oguztekbas0@gmail.com",
+    "password":"Passwords12"
+}
+]2024-03-02 21:36:10.875 +03:00 [INF Executing endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 21:36:10.886 +03:00 [INF Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(AuthServer.Core.DTOs.LoginDto) on controller AuthServer.API.Controllers.AuthController (AuthServer.API).
+]2024-03-02 21:36:11.009 +03:00 [INF Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+]2024-03-02 21:36:11.013 +03:00 [INF Executed action AuthServer.API.Controllers.AuthController.Login (AuthServer.API) in 126.5437ms
+]2024-03-02 21:36:11.013 +03:00 [INF Executed endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 21:36:11.014 +03:00 [INF Response => Response {"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"loginDto":["The loginDto field is required."]},"traceId":"00-fe64ec4ba480cb50d8e54b4999bfa6a2-cefcfb21f1fd2036-00"}
+]2024-03-02 21:36:11.016 +03:00 [INF Request finished HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - 400 null application/problem+json; charset=utf-8 185.5429ms
+]2024-03-02 21:36:54.155 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-02 21:36:54.459 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-02 21:36:54.462 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-02 21:36:54.463 +03:00 [INF Hosting environment: Development
+]2024-03-02 21:36:54.463 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-02 21:36:56.459 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-02 21:36:56.759 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 310.8069ms
+]2024-03-02 21:36:56.855 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-02 21:36:56.856 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-02 21:36:56.860 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 5.4542ms
+]2024-03-02 21:36:56.924 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.4914ms
+]2024-03-02 21:36:57.056 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-02 21:36:57.238 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 182.6917ms
+]2024-03-02 21:37:01.849 +03:00 [INF Request starting HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - application/json 72
+]2024-03-02 21:37:01.865 +03:00 [INF Request => http 192.168.1.33:5118/api/auth/login  {
+    "email":"oguztekbas0@gmail.com",
+    "password":"Passwords12"
+}
+]2024-03-02 21:37:02.042 +03:00 [INF Executing endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 21:37:02.086 +03:00 [INF Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(AuthServer.Core.DTOs.LoginDto) on controller AuthServer.API.Controllers.AuthController (AuthServer.API).
+]2024-03-02 21:37:03.275 +03:00 [INF Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+]2024-03-02 21:37:03.298 +03:00 [INF Executed action AuthServer.API.Controllers.AuthController.Login (AuthServer.API) in 1208.0944ms
+]2024-03-02 21:37:03.298 +03:00 [INF Executed endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 21:37:03.300 +03:00 [INF Response => Response {"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"loginDto":["The loginDto field is required."]},"traceId":"00-51e1ee1762f08ad6f39edfd66dfd8d4a-72e1c60037c7bfe2-00"}
+]2024-03-02 21:37:03.307 +03:00 [INF Request finished HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - 400 null application/problem+json; charset=utf-8 1458.4427ms
+]2024-03-02 21:38:36.990 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-02 21:38:37.237 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-02 21:38:37.239 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-02 21:38:37.239 +03:00 [INF Hosting environment: Development
+]2024-03-02 21:38:37.239 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-02 21:38:38.358 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-02 21:38:38.625 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 277.0832ms
+]2024-03-02 21:38:38.790 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-02 21:38:38.794 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 3.4881ms
+]2024-03-02 21:38:38.813 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-02 21:38:38.906 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 92.2335ms
+]2024-03-02 21:38:39.046 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-02 21:38:39.204 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 158.2146ms
+]2024-03-02 21:38:44.939 +03:00 [INF Request starting HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - application/json 72
+]2024-03-02 21:38:44.948 +03:00 [WRN Failed to determine the https port for redirect.
+]2024-03-02 21:38:44.957 +03:00 [INF Request => http 192.168.1.33:5118/api/auth/login  {
+    "email":"oguztekbas0@gmail.com",
+    "password":"Passwords12"
+}
+]2024-03-02 21:38:45.083 +03:00 [INF Executing endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 21:38:45.111 +03:00 [INF Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(AuthServer.Core.DTOs.LoginDto) on controller AuthServer.API.Controllers.AuthController (AuthServer.API).
+]2024-03-02 21:38:46.223 +03:00 [INF Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+]2024-03-02 21:38:46.247 +03:00 [INF Executed action AuthServer.API.Controllers.AuthController.Login (AuthServer.API) in 1132.6388ms
+]2024-03-02 21:38:46.247 +03:00 [INF Executed endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 21:38:46.248 +03:00 [INF Response => Response {"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"loginDto":["The loginDto field is required."]},"traceId":"00-e7391ce1d081414b3e865f232d5dd15b-b981fc6c07fbca6b-00"}
+]2024-03-02 21:38:46.255 +03:00 [INF Request finished HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - 400 null application/problem+json; charset=utf-8 1316.2321ms
+]2024-03-02 21:39:20.616 +03:00 [INF Request starting HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - application/json 72
+]2024-03-02 21:39:20.619 +03:00 [INF Request => http 192.168.1.33:5118/api/auth/login  {
+    "email":"oguztekbas0@gmail.com",
+    "password":"Passwords12"
+}
+]2024-03-02 21:39:20.621 +03:00 [INF Executing endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 21:39:20.622 +03:00 [INF Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(AuthServer.Core.DTOs.LoginDto) on controller AuthServer.API.Controllers.AuthController (AuthServer.API).
+]2024-03-02 21:39:20.675 +03:00 [INF Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+]2024-03-02 21:39:20.675 +03:00 [INF Executed action AuthServer.API.Controllers.AuthController.Login (AuthServer.API) in 53.0794ms
+]2024-03-02 21:39:20.675 +03:00 [INF Executed endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 21:39:20.675 +03:00 [INF Response => Response {"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"loginDto":["The loginDto field is required."]},"traceId":"00-5c00cfa1b64d935199c1928fd05ec032-71264cc861a1dd10-00"}
+]2024-03-02 21:39:20.675 +03:00 [INF Request finished HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - 400 null application/problem+json; charset=utf-8 59.891ms
+]2024-03-02 21:40:21.327 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-02 21:40:21.559 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-02 21:40:21.569 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-02 21:40:21.569 +03:00 [INF Hosting environment: Development
+]2024-03-02 21:40:21.569 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-02 21:40:22.700 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-02 21:40:22.923 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 235.8456ms
+]2024-03-02 21:40:22.978 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-02 21:40:22.980 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-02 21:40:22.984 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 5.5586ms
+]2024-03-02 21:40:23.075 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 94.6142ms
+]2024-03-02 21:40:23.235 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-02 21:40:23.482 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 247.8276ms
+]2024-03-02 21:40:28.523 +03:00 [INF Request starting HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - application/json 72
+]2024-03-02 21:40:28.536 +03:00 [INF Request => http 192.168.1.33:5118/api/auth/login  {
+    "email":"oguztekbas0@gmail.com",
+    "password":"Passwords12"
+}
+]2024-03-02 21:40:30.130 +03:00 [INF Executing endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 21:40:30.162 +03:00 [INF Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(AuthServer.Core.DTOs.LoginDto) on controller AuthServer.API.Controllers.AuthController (AuthServer.API).
+]2024-03-02 21:40:31.757 +03:00 [INF Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+]2024-03-02 21:40:31.795 +03:00 [INF Executed action AuthServer.API.Controllers.AuthController.Login (AuthServer.API) in 1624.8942ms
+]2024-03-02 21:40:31.795 +03:00 [INF Executed endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 21:40:31.796 +03:00 [INF Response => Response {"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"loginDto":["The loginDto field is required."]},"traceId":"00-1555900bec0bba20907b46d6a9fc768e-609f612612b87f9f-00"}
+]2024-03-02 21:40:31.809 +03:00 [INF Request finished HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - 400 null application/problem+json; charset=utf-8 3285.3771ms
+]2024-03-02 21:41:52.026 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-02 21:41:52.281 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-02 21:41:52.284 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-02 21:41:52.284 +03:00 [INF Hosting environment: Development
+]2024-03-02 21:41:52.284 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-02 21:41:52.854 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-02 21:41:53.053 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 209.2577ms
+]2024-03-02 21:41:53.111 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-02 21:41:53.113 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-02 21:41:53.116 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 5.7009ms
+]2024-03-02 21:41:53.267 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 154.051ms
+]2024-03-02 21:41:53.441 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-02 21:41:53.585 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 143.9143ms
+]2024-03-02 21:41:59.271 +03:00 [INF Request starting HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - application/json 72
+]2024-03-02 21:41:59.283 +03:00 [INF Request => http 192.168.1.33:5118/api/auth/login  {
+    "email":"oguztekbas0@gmail.com",
+    "password":"Passwords12"
+}
+]2024-03-02 21:42:00.816 +03:00 [INF Executing endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 21:42:00.856 +03:00 [INF Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(AuthServer.Core.DTOs.LoginDto) on controller AuthServer.API.Controllers.AuthController (AuthServer.API).
+]2024-03-02 21:42:02.743 +03:00 [INF Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+]2024-03-02 21:42:02.764 +03:00 [INF Executed action AuthServer.API.Controllers.AuthController.Login (AuthServer.API) in 1904.0228ms
+]2024-03-02 21:42:02.764 +03:00 [INF Executed endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 21:42:02.765 +03:00 [INF Response => Response {"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"errors":{"$":["The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0."],"loginDto":["The loginDto field is required."]},"traceId":"00-14d0666cf12e8ce648e791234b610f27-2dd03843d97cd193-00"}
+]2024-03-02 21:42:02.772 +03:00 [INF Request finished HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - 400 null application/problem+json; charset=utf-8 3501.0235ms
+]2024-03-02 21:44:14.916 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-02 21:44:15.149 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-02 21:44:15.152 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-02 21:44:15.154 +03:00 [INF Hosting environment: Development
+]2024-03-02 21:44:15.154 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-02 21:44:16.486 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-02 21:44:16.801 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 329.5608ms
+]2024-03-02 21:44:16.912 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-02 21:44:16.928 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 16.3659ms
+]2024-03-02 21:44:16.983 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-02 21:44:17.159 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 176.2901ms
+]2024-03-02 21:44:17.321 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-02 21:44:17.546 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 225.2127ms
+]2024-03-02 21:44:22.997 +03:00 [INF Request starting HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - application/json 72
+]2024-03-02 21:44:23.124 +03:00 [INF Executing endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 21:44:23.167 +03:00 [INF Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(AuthServer.Core.DTOs.LoginDto) on controller AuthServer.API.Controllers.AuthController (AuthServer.API).
+]2024-03-02 21:44:36.680 +03:00 [INF Executed DbCommand (117ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+]2024-03-02 21:44:37.143 +03:00 [INF Executed DbCommand (7ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Code], [u].[Expiration]
+FROM [UserRefreshTokens] AS [u]
+WHERE [u].[UserId] = @__user_Id_0
+]2024-03-02 21:44:37.606 +03:00 [INF Executed DbCommand (36ms) [Parameters=[@p2='?' (Size = 450), @p0='?' (Size = 200), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [UserRefreshTokens] SET [Code] = @p0, [Expiration] = @p1
+OUTPUT 1
+WHERE [UserId] = @p2;
+]2024-03-02 21:44:37.648 +03:00 [INF Executing ObjectResult, writing value of type 'AuthServer.Core.CommonDTOs.Response`1[[AuthServer.Core.DTOs.TokenDto, AuthServer.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+]2024-03-02 21:44:37.680 +03:00 [INF Executed action AuthServer.API.Controllers.AuthController.Login (AuthServer.API) in 14503.2666ms
+]2024-03-02 21:44:37.682 +03:00 [INF Executed endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 21:44:37.698 +03:00 [INF Request finished HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - 200 null application/json; charset=utf-8 14701.3716ms
+]2024-03-02 21:52:16.032 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-02 21:52:17.884 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-02 21:52:17.887 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-02 21:52:17.887 +03:00 [INF Hosting environment: Development
+]2024-03-02 21:52:17.887 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-02 21:52:19.295 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-02 21:52:19.668 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 391.9283ms
+]2024-03-02 21:52:20.071 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-02 21:52:20.076 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 4.7815ms
+]2024-03-02 21:52:20.081 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-02 21:52:20.182 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 101.6189ms
+]2024-03-02 21:52:20.450 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-02 21:52:20.635 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 185.8971ms
+]2024-03-02 21:52:27.565 +03:00 [INF Request starting HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - application/json 72
+]2024-03-02 21:52:27.575 +03:00 [WRN Failed to determine the https port for redirect.
+]2024-03-02 21:52:27.765 +03:00 [ERR An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Specified method is not supported.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.Seek(Int64 offset, SeekOrigin origin)
+   at AuthServer.API.Extensions.RequestResponseMiddleware.FormatRequest(HttpRequest request) in C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\Extensions\RequestResponseMiddleware.cs:line 43
+   at AuthServer.API.Extensions.RequestResponseMiddleware.Invoke(HttpContext context) in C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\Extensions\RequestResponseMiddleware.cs:line 21
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+]2024-03-02 21:52:32.653 +03:00 [ERR Custom Exception Handler => {"TargetSite":"Int64 Seek(Int64, System.IO.SeekOrigin)","Message":"Specified method is not supported.","Data":[],"InnerException":null,"HelpLink":null,"Source":"Microsoft.AspNetCore.Server.Kestrel.Core","HResult":-2146233067,"StackTrace":"   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.Seek(Int64 offset, SeekOrigin origin)\r\n   at AuthServer.API.Extensions.RequestResponseMiddleware.FormatRequest(HttpRequest request) in C:\\Users\\oguzt\\OneDrive\\Desktop\\proje\\AuthServer\\AuthServer.API\\Extensions\\RequestResponseMiddleware.cs:line 43\r\n   at AuthServer.API.Extensions.RequestResponseMiddleware.Invoke(HttpContext context) in C:\\Users\\oguzt\\OneDrive\\Desktop\\proje\\AuthServer\\AuthServer.API\\Extensions\\RequestResponseMiddleware.cs:line 21\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)","$type":"NotSupportedException"}
+]2024-03-02 21:52:32.695 +03:00 [INF Request finished HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - 500 null application/json 5130.7989ms
+]2024-03-02 21:52:43.680 +03:00 [INF Request starting HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - application/json 72
+]2024-03-02 21:52:43.742 +03:00 [ERR An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Specified method is not supported.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.Seek(Int64 offset, SeekOrigin origin)
+   at AuthServer.API.Extensions.RequestResponseMiddleware.FormatRequest(HttpRequest request) in C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\Extensions\RequestResponseMiddleware.cs:line 43
+   at AuthServer.API.Extensions.RequestResponseMiddleware.Invoke(HttpContext context) in C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API\Extensions\RequestResponseMiddleware.cs:line 21
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+]2024-03-02 21:52:50.667 +03:00 [ERR Custom Exception Handler => {"TargetSite":"Int64 Seek(Int64, System.IO.SeekOrigin)","Message":"Specified method is not supported.","Data":[],"InnerException":null,"HelpLink":null,"Source":"Microsoft.AspNetCore.Server.Kestrel.Core","HResult":-2146233067,"StackTrace":"   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.Seek(Int64 offset, SeekOrigin origin)\r\n   at AuthServer.API.Extensions.RequestResponseMiddleware.FormatRequest(HttpRequest request) in C:\\Users\\oguzt\\OneDrive\\Desktop\\proje\\AuthServer\\AuthServer.API\\Extensions\\RequestResponseMiddleware.cs:line 43\r\n   at AuthServer.API.Extensions.RequestResponseMiddleware.Invoke(HttpContext context) in C:\\Users\\oguzt\\OneDrive\\Desktop\\proje\\AuthServer\\AuthServer.API\\Extensions\\RequestResponseMiddleware.cs:line 21\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)","$type":"NotSupportedException"}
+]2024-03-02 21:52:50.682 +03:00 [INF Request finished HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - 500 null application/json 7001.623ms
+]2024-03-02 21:54:31.193 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-02 21:54:31.466 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-02 21:54:31.469 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-02 21:54:31.469 +03:00 [INF Hosting environment: Development
+]2024-03-02 21:54:31.469 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-02 21:54:33.148 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-02 21:54:33.435 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 297.5595ms
+]2024-03-02 21:54:33.865 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-02 21:54:33.870 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 4.6398ms
+]2024-03-02 21:54:33.870 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-02 21:54:33.985 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 115.0166ms
+]2024-03-02 21:54:34.177 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-02 21:54:34.322 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 144.9688ms
+]2024-03-02 21:54:38.610 +03:00 [INF Request starting HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - application/json 72
+]2024-03-02 21:54:38.621 +03:00 [WRN Failed to determine the https port for redirect.
+]2024-03-02 21:54:38.634 +03:00 [INF Request => http 192.168.1.33:5118/api/auth/login  {
+    "email":"oguztekbas0@gmail.com",
+    "password":"Passwords12"
+}
+]2024-03-02 21:54:38.804 +03:00 [INF Executing endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 21:54:38.843 +03:00 [INF Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(AuthServer.Core.DTOs.LoginDto) on controller AuthServer.API.Controllers.AuthController (AuthServer.API).
+]2024-03-02 21:54:46.388 +03:00 [INF Executed DbCommand (88ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+]2024-03-02 21:54:46.735 +03:00 [INF Executed DbCommand (11ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Code], [u].[Expiration]
+FROM [UserRefreshTokens] AS [u]
+WHERE [u].[UserId] = @__user_Id_0
+]2024-03-02 21:54:46.911 +03:00 [INF Executed DbCommand (18ms) [Parameters=[@p2='?' (Size = 450), @p0='?' (Size = 200), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [UserRefreshTokens] SET [Code] = @p0, [Expiration] = @p1
+OUTPUT 1
+WHERE [UserId] = @p2;
+]2024-03-02 21:54:46.943 +03:00 [INF Executing ObjectResult, writing value of type 'AuthServer.Core.CommonDTOs.Response`1[[AuthServer.Core.DTOs.TokenDto, AuthServer.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+]2024-03-02 21:54:46.961 +03:00 [INF Executed action AuthServer.API.Controllers.AuthController.Login (AuthServer.API) in 8113.9464ms
+]2024-03-02 21:54:46.962 +03:00 [INF Executed endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-02 21:54:46.964 +03:00 [INF Response => Response {"data":{"accessToken":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1MTJhZTA2Yi0wNDNhLTQwZTUtOTQ3Mi05YjhkNDM3NWZiYWMiLCJlbWFpbCI6Im9ndXp0ZWtiYXMwQGdtYWlsLmNvbSIsIm5hbWUiOiJvZ3V6dGVrYmFzIiwianRpIjoiYWZhNTMwNjAtNTEyNy00OTc5LWE1YmEtMTAzNjU1YmY5ZjI1IiwiYXVkIjpbInd3dy5hdXRoc2VydmVyLmNvbSIsInd3dy5taW5pYXBwMS5hdXRoc2VydmVyLmNvbSIsInd3dy5taW5pYXBwMi5hdXRoc2VydmVyLmNvbSIsInd3dy5taW5pYXBwMy5hdXRoc2VydmVyLmNvbSJdLCJuYmYiOjE3MDk0MDU2ODYsImV4cCI6MTcwOTQwNTk4NiwiaXNzIjoid3d3LmF1dGhzZXJ2ZXIuY29tIn0.j-OSZNc1U5soxI-oS5xyyZUfMDQFujyzpetXJ03pmG4","accessTokenExpiration":"2024-03-02T21:59:46.6713094+03:00","refreshToken":"hcTyV2Kvp0qEqLOGQsmf2Bn6qTUvhhjxebZM70GPoiA=","refreshTokenExpiration":"2024-03-02T21:59:46.6714049+03:00"},"statusCode":200,"error":null}
+]2024-03-02 21:54:46.975 +03:00 [INF Request finished HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - 200 null application/json; charset=utf-8 8364.8478ms
 ]
