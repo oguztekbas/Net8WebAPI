@@ -6,7 +6,7 @@
 **********************************************************
 # => UnitOfWork - Entity Framework Core - Migrations - Identity Framework - Options Pattern - AutoMapper
 *********************************************************
-# => Redis Caching - Request-Response and Global Exception Logging With SeriLog to ElasticSearch and File
+# => Redis Caching - Request-Response Logging and Global Exception Errors Logging With SeriLog to ElasticSearch and File
 
 **********************************************************
 - Katmanlı Mimari ve Repository Pattern yapısında, JWT token dağıtan, Redis Distributed Cache kullanan, SeriLog ile ElasticSearch'e log atma mekanizmasına sahip olan Basic bir .NET 8 WEB API şablonu.
