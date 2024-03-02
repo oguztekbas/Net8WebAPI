@@ -4,7 +4,7 @@
 
 # => .Net 8 Web API - JWT - Repository Pattern ile Katmanlı Mimari - Depency Injection - Global Exception Handler - Custom Middlewares
 **********************************************************
-# => UnitOfWork - Entity Framework Core - Migrations - Identity Framework - Options Pattern - AutoMapper
+# => UnitOfWork - Entity Framework Core - Migrations - Identity Framework - Options Pattern - AutoMapper - LINQ Queries
 *********************************************************
 # => Redis Caching - Request/Response Logging and Global Exception Errors Logging With SeriLog to ElasticSearch and File
 
