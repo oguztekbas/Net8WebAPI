@@ -14,7 +14,7 @@
 
 **********************************************************
 **********************************************************
-- API => Ana projemiz - Controller kısımları sade yazıldı. Bu yüzden kod yükü diğer katmanlarda. Sadece program.cs'te Depency Injection'lar ve configler var bunun dışında Custom Middlewares yapıları var ---  Service katmanını referans alır.
+- API => Ana projemiz - Controller kısımları sade yazıldı. Bu yüzden kod yükü diğer katmanlarda. Sadece program.cs'te Depency Injection'lar ve configler var. Bunun dışında Custom Middlewares yapıları var ---  Service katmanını referans alır.
 - Service => Business Logic ve Validation işlemleri ve Redis Caching'i kullanır.  ---  Data katmanını referans alır
 - Data => DB'ye erişim, sorgular ve migrationlar
 - Core => Interface ve class'lar
