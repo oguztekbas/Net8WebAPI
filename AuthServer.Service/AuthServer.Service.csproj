@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AuthServer.Data\AuthServer.Data.csproj" />
+    <ProjectReference Include="..\AuthServer.RabbitMQ\AuthServer.RabbitMQ.csproj" />
   </ItemGroup>
 
 </Project>

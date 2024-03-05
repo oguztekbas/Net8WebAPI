@@ -1,0 +1,12 @@
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.BackgroundService\bin\Debug\net8.0\AuthServer.BackgroundService.deps.json
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.BackgroundService\bin\Debug\net8.0\AuthServer.BackgroundService.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.BackgroundService\bin\Debug\net8.0\AuthServer.BackgroundService.pdb
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.BackgroundService\obj\Debug\net8.0\AuthServer.BackgroundService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.BackgroundService\obj\Debug\net8.0\AuthServer.BackgroundService.AssemblyInfoInputs.cache
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.BackgroundService\obj\Debug\net8.0\AuthServer.BackgroundService.AssemblyInfo.cs
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.BackgroundService\obj\Debug\net8.0\AuthServer.BackgroundService.csproj.CoreCompileInputs.cache
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.BackgroundService\obj\Debug\net8.0\AuthServer.BackgroundService.sourcelink.json
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.BackgroundService\obj\Debug\net8.0\AuthServer.BackgroundService.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.BackgroundService\obj\Debug\net8.0\refint\AuthServer.BackgroundService.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.BackgroundService\obj\Debug\net8.0\AuthServer.BackgroundService.pdb
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.BackgroundService\obj\Debug\net8.0\ref\AuthServer.BackgroundService.dll

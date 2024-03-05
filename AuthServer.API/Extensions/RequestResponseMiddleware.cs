@@ -6,7 +6,7 @@ using System.Text;
 
 namespace AuthServer.API.Extensions
 {
-    //RequestResponse Serilog ile Loglama(Elasticsearch'e)
+    //RequestResponse'u Serilog ile Loglama(Elasticsearch'e) Middleware'i
     public class RequestResponseMiddleware
     {
         private readonly RequestDelegate _next;

@@ -28,7 +28,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AuthServer.Cache\AuthServer.Cache.csproj" />
+    <ProjectReference Include="..\AuthServer.RabbitMQ\AuthServer.RabbitMQ.csproj" />
     <ProjectReference Include="..\AuthServer.Service\AuthServer.Service.csproj" />
+    <ProjectReference Include="..\EmailService\EmailService.csproj" />
   </ItemGroup>
 
 </Project>

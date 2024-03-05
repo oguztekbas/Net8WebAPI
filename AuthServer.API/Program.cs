@@ -1,3 +1,4 @@
+using AuthServer.API.BackgroundServices;
 using AuthServer.API.Extensions;
 using AuthServer.Cache;
 using AuthServer.Core.Entities;
@@ -8,11 +9,13 @@ using AuthServer.Core.UnitOfWork;
 using AuthServer.Data;
 using AuthServer.Data.Repositories;
 using AuthServer.Data.UnitOfWork;
+using AuthServer.RabbitMQ;
 using AuthServer.Service.HelperMethods;
 using AuthServer.Service.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using RabbitMQ.Client;
 using Serilog;
 using Serilog.Exceptions;
 using Serilog.Sinks.Elasticsearch;
@@ -99,7 +102,6 @@ builder.Services.AddSingleton<RedisService>(sp =>
 });
 
 
-
 // Serilog kýsýmlarý
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
@@ -116,6 +118,22 @@ builder.Host.UseSerilog((context, configuration) =>
 //SeriLog mekanizmasýný Singleton olarak ekledin.
 builder.Services.AddSingleton(Log.Logger);
 
+
+//RabbitMQ
+builder.Services.AddSingleton(sp =>
+{
+    return new ConnectionFactory()
+    {
+        Uri = new Uri(builder.Configuration.GetSection("ConnectionStrings:RabbitMQ").Value),
+        DispatchConsumersAsync = true // bu önemli çünkü RabbitMQ consume ettiðin yerdeki received metodunu async kullandýðýn için çalýþmýyordu.
+    };
+});
+
+builder.Services.AddSingleton<RabbitMQClientService>();
+builder.Services.AddSingleton<RabbitMQPublisher>();
+
+//RabbitMQ'yu consume edecek backgroundService
+builder.Services.AddHostedService<EmailSendBackgroundService>();
 
 
 
@@ -139,16 +157,16 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection(); //Mobile için kapamýþtýn.
+app.UseHttpsRedirection(); 
 
 //-------------
 app.UseHandleGlobalException();
 app.UseMiddleware<RequestResponseMiddleware>();
 //-------------
 
-//------------------------------------------------------------ Authentication middleware eklendi.
+//-------------------------------Authentication middleware eklendi.
 app.UseAuthentication();
-//------------------------------------------------------------
+//-------------------------------
 
 app.UseAuthorization();
 

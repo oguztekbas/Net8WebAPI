@@ -5,6 +5,7 @@ using AuthServer.Core.Models;
 using AuthServer.Core.Repositories;
 using AuthServer.Core.Services;
 using AuthServer.Core.UnitOfWork;
+using AuthServer.RabbitMQ;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -23,15 +24,17 @@ namespace AuthServer.Service.Services
         private readonly UserManager<UserApp> _userManager;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IGenericRepository<UserRefreshToken> _userRefreshTokenRepository;
+        private readonly RabbitMQPublisher _rabbitMQPublisher;
 
         public AuthenticationService(IOptions<List<ClientTokenOption>> optionsClient, ITokenService tokenService, UserManager<UserApp>
-            userManager, IUnitOfWork unitOfWork, IGenericRepository<UserRefreshToken> userRefreshTokenRepository)
+            userManager, IUnitOfWork unitOfWork, IGenericRepository<UserRefreshToken> userRefreshTokenRepository, RabbitMQPublisher rabbitMQPublisher)
         {
             _clients = optionsClient.Value;
             _tokenService = tokenService;
             _userManager = userManager;
             _unitOfWork = unitOfWork;
             _userRefreshTokenRepository = userRefreshTokenRepository;
+            _rabbitMQPublisher = rabbitMQPublisher;
         }
 
         public async Task<Response<TokenDto>> CreateAccessTokenAsync(LoginDto loginDto)
@@ -77,6 +80,11 @@ namespace AuthServer.Service.Services
             }
 
             await _unitOfWork.CommitAsync();
+
+            //kullanıcı giriş yapınca RabbitMQ kuyruğuna email göndermesi için mesaj ilettik.
+            //Consume yapacak kısmımız yine bu projede backgroundService içinde kuyruktan
+            //yakalayayıp mail atacak.
+            _rabbitMQPublisher.Publish("<h1> Giriş yaptınız </h1>");
 
             return Response<TokenDto>.Success(token, 200);
         }

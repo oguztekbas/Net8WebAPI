@@ -1,0 +1,12 @@
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\EmailService\bin\Debug\net8.0\EmailService.deps.json
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\EmailService\bin\Debug\net8.0\EmailService.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\EmailService\bin\Debug\net8.0\EmailService.pdb
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\EmailService\obj\Debug\net8.0\EmailService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\EmailService\obj\Debug\net8.0\EmailService.AssemblyInfoInputs.cache
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\EmailService\obj\Debug\net8.0\EmailService.AssemblyInfo.cs
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\EmailService\obj\Debug\net8.0\EmailService.csproj.CoreCompileInputs.cache
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\EmailService\obj\Debug\net8.0\EmailService.sourcelink.json
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\EmailService\obj\Debug\net8.0\EmailService.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\EmailService\obj\Debug\net8.0\refint\EmailService.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\EmailService\obj\Debug\net8.0\EmailService.pdb
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\EmailService\obj\Debug\net8.0\ref\EmailService.dll

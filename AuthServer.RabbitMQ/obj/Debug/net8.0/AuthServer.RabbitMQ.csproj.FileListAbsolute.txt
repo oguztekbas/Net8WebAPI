@@ -1,0 +1,13 @@
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.RabbitMQ\bin\Debug\net8.0\AuthServer.RabbitMQ.deps.json
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.RabbitMQ\bin\Debug\net8.0\AuthServer.RabbitMQ.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.RabbitMQ\bin\Debug\net8.0\AuthServer.RabbitMQ.pdb
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.RabbitMQ\obj\Debug\net8.0\AuthServer.RabbitMQ.csproj.AssemblyReference.cache
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.RabbitMQ\obj\Debug\net8.0\AuthServer.RabbitMQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.RabbitMQ\obj\Debug\net8.0\AuthServer.RabbitMQ.AssemblyInfoInputs.cache
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.RabbitMQ\obj\Debug\net8.0\AuthServer.RabbitMQ.AssemblyInfo.cs
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.RabbitMQ\obj\Debug\net8.0\AuthServer.RabbitMQ.csproj.CoreCompileInputs.cache
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.RabbitMQ\obj\Debug\net8.0\AuthServer.RabbitMQ.sourcelink.json
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.RabbitMQ\obj\Debug\net8.0\AuthServer.RabbitMQ.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.RabbitMQ\obj\Debug\net8.0\refint\AuthServer.RabbitMQ.dll
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.RabbitMQ\obj\Debug\net8.0\AuthServer.RabbitMQ.pdb
+C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.RabbitMQ\obj\Debug\net8.0\ref\AuthServer.RabbitMQ.dll

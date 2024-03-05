@@ -1,0 +1,108 @@
+2024-03-05 00:05:54.665 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-05 00:10:31.504 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-05 00:13:37.047 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-05 00:13:44.592 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-05 00:13:44.596 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-05 00:13:44.597 +03:00 [INF Hosting environment: Development
+]2024-03-05 00:13:44.597 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-05 00:13:47.537 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-05 00:13:47.857 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 331.4822ms
+]2024-03-05 00:13:48.338 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-05 00:13:48.343 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 5.16ms
+]2024-03-05 00:13:48.347 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-05 00:13:48.457 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 110.6598ms
+]2024-03-05 00:13:48.621 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-05 00:13:48.821 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 199.9264ms
+]2024-03-05 01:08:12.195 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-05 01:08:13.914 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-05 01:08:13.916 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-05 01:08:13.917 +03:00 [INF Hosting environment: Development
+]2024-03-05 01:08:13.917 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-05 01:08:15.069 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-05 01:08:15.327 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 268.5276ms
+]2024-03-05 01:08:15.426 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-05 01:08:15.426 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-05 01:08:15.432 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 6.0365ms
+]2024-03-05 01:08:15.585 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 158.9523ms
+]2024-03-05 01:08:15.745 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-05 01:08:15.914 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 169.6142ms
+]2024-03-05 01:09:46.902 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-05 01:09:52.897 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-05 01:09:52.899 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-05 01:09:52.900 +03:00 [INF Hosting environment: Development
+]2024-03-05 01:09:52.900 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-05 01:09:54.297 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-05 01:09:54.544 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 260.9774ms
+]2024-03-05 01:09:54.835 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-05 01:09:54.839 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 3.7493ms
+]2024-03-05 01:09:54.847 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-05 01:09:55.017 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 169.7809ms
+]2024-03-05 01:09:55.207 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-05 01:09:55.441 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 234.4809ms
+]2024-03-05 01:10:58.931 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-05 01:11:06.349 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-05 01:11:06.353 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-05 01:11:06.353 +03:00 [INF Hosting environment: Development
+]2024-03-05 01:11:06.353 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-05 01:11:07.881 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-05 01:11:08.292 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 426.428ms
+]2024-03-05 01:11:08.543 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-05 01:11:08.543 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-05 01:11:08.548 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 5.6235ms
+]2024-03-05 01:11:08.678 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 135.0531ms
+]2024-03-05 01:11:08.954 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-05 01:11:09.204 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 249.9893ms
+]2024-03-05 01:18:35.048 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-05 01:18:48.912 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-05 01:18:48.915 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-05 01:18:48.915 +03:00 [INF Hosting environment: Development
+]2024-03-05 01:18:48.915 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-05 01:18:50.476 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-05 01:19:06.174 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 15707.8943ms
+]2024-03-05 01:19:06.478 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-05 01:19:06.481 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-05 01:19:06.486 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 8.2397ms
+]2024-03-05 01:19:06.617 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 137.7336ms
+]2024-03-05 01:19:06.888 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-05 01:19:07.156 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 268.0773ms
+]2024-03-05 13:44:17.692 +03:00 [INF User profile is available. Using 'C:\Users\oguzt\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+]2024-03-05 13:45:29.912 +03:00 [INF Now listening on: http://192.168.1.33:5118
+]2024-03-05 13:45:29.917 +03:00 [INF Application started. Press Ctrl+C to shut down.
+]2024-03-05 13:45:29.917 +03:00 [INF Hosting environment: Development
+]2024-03-05 13:45:29.918 +03:00 [INF Content root path: C:\Users\oguzt\OneDrive\Desktop\proje\AuthServer\AuthServer.API
+]2024-03-05 13:45:31.831 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - null null
+]2024-03-05 13:46:27.593 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/index.html - 200 null text/html;charset=utf-8 55775.973ms
+]2024-03-05 13:46:28.195 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - null null
+]2024-03-05 13:46:28.206 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - null null
+]2024-03-05 13:46:28.209 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 15.9793ms
+]2024-03-05 13:46:38.754 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10548.4026ms
+]2024-03-05 13:46:38.906 +03:00 [INF Request starting HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - null null
+]2024-03-05 13:46:39.322 +03:00 [INF Request finished HTTP/1.1 GET http://192.168.1.33:5118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 416.6464ms
+]2024-03-05 13:48:16.262 +03:00 [INF Request starting HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - application/json 72
+]2024-03-05 13:48:16.434 +03:00 [WRN Failed to determine the https port for redirect.
+]2024-03-05 13:48:16.497 +03:00 [INF Request => http 192.168.1.33:5118/api/auth/login  {
+    "email":"oguztekbas0@gmail.com",
+    "password":"Passwords12"
+}
+]2024-03-05 13:48:17.071 +03:00 [INF Executing endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-05 13:48:17.177 +03:00 [INF Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(AuthServer.Core.DTOs.LoginDto) on controller AuthServer.API.Controllers.AuthController (AuthServer.API).
+]2024-03-05 13:48:23.002 +03:00 [INF Executed DbCommand (133ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+]2024-03-05 13:48:23.499 +03:00 [INF Executed DbCommand (10ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Code], [u].[Expiration]
+FROM [UserRefreshTokens] AS [u]
+WHERE [u].[UserId] = @__user_Id_0
+]2024-03-05 13:48:23.638 +03:00 [INF Executed DbCommand (11ms) [Parameters=[@p2='?' (Size = 450), @p0='?' (Size = 200), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [UserRefreshTokens] SET [Code] = @p0, [Expiration] = @p1
+OUTPUT 1
+WHERE [UserId] = @p2;
+]2024-03-05 13:48:25.250 +03:00 [INF Executing ObjectResult, writing value of type 'AuthServer.Core.CommonDTOs.Response`1[[AuthServer.Core.DTOs.TokenDto, AuthServer.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+]2024-03-05 13:48:25.275 +03:00 [INF Executed action AuthServer.API.Controllers.AuthController.Login (AuthServer.API) in 8094.5461ms
+]2024-03-05 13:48:25.276 +03:00 [INF Executed endpoint 'AuthServer.API.Controllers.AuthController.Login (AuthServer.API)'
+]2024-03-05 13:48:25.278 +03:00 [INF Response => Response {"data":{"accessToken":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1MTJhZTA2Yi0wNDNhLTQwZTUtOTQ3Mi05YjhkNDM3NWZiYWMiLCJlbWFpbCI6Im9ndXp0ZWtiYXMwQGdtYWlsLmNvbSIsIm5hbWUiOiJvZ3V6dGVrYmFzIiwianRpIjoiM2RhMjM2NDEtMWMzZi00YTM4LTkwMjEtMGVmMmEzNGM5MjhlIiwiYXVkIjpbInd3dy5hdXRoc2VydmVyLmNvbSIsInd3dy5taW5pYXBwMS5hdXRoc2VydmVyLmNvbSIsInd3dy5taW5pYXBwMi5hdXRoc2VydmVyLmNvbSIsInd3dy5taW5pYXBwMy5hdXRoc2VydmVyLmNvbSJdLCJuYmYiOjE3MDk2MzU3MDMsImV4cCI6MTcwOTYzNjAwMywiaXNzIjoid3d3LmF1dGhzZXJ2ZXIuY29tIn0.FfEkGzPyvCakJ10sXCVzBjeScYkmNKGKxXVdxmTyebc","accessTokenExpiration":"2024-03-05T13:53:23.367166+03:00","refreshToken":"gboSfoPkcngmHSpKa+LPvlT5jjNr9/YWNgy6FWJ217k=","refreshTokenExpiration":"2024-03-05T13:53:23.3672569+03:00"},"statusCode":200,"error":null}
+]2024-03-05 13:48:25.289 +03:00 [INF Request finished HTTP/1.1 POST http://192.168.1.33:5118/api/auth/login - 200 null application/json; charset=utf-8 9064.5579ms
+]
