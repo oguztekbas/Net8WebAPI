@@ -17,7 +17,7 @@
 **********************************************************
 **********************************************************
 - API => Ana projemiz - Controller kısımları sade yazıldı. Bu yüzden kod yükü diğer katmanlarda. Program.cs'te Depency Injection'lar ve configler var. Exception ve RequestResponse'u yakaladığımız ve Serilog ile Elasticsearch'e log attırdığımız Custom Middlewares yapıları var.
-  Kullanıcı login olduğunda business katmanında RabbitMQ ile kuyruğa directRouting yöntemiyle emailText mesajını iletiyoruz. API tarafında ise uygulamada her an çalışan BackgroundService'miz var. Burada consume edip mail gönderiyoruz.   ---Service katmanını referans alır.
+  Kullanıcı login olduğunda business katmanında RabbitMQ ile kuyruğa directExchange yöntemiyle emailText mesajını iletiyoruz. API tarafında ise uygulamada her an çalışan BackgroundService'miz var. Burada consume edip mail gönderiyoruz.   ---Service katmanını referans alır.
   
  
 - Service => Business Logic ve Validation işlemleri ve Redis Caching'i kullanır.  ---  Data katmanını referans alır
