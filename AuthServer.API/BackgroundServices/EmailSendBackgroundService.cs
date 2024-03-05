@@ -7,6 +7,12 @@ using System.Text.Json;
 
 namespace AuthServer.API.BackgroundServices
 {
+    // StartAsync metodu 1 kere çalışacak.
+    // ExecuteAsync metodu ise uygulama stop olmadığı sürece sürekli
+    // çalışacak ve loginden sonra RabbitMQ ile kuyruğa ilettiğimiz emailText
+    // mesajını almak için kuyruğu sürekli dinleyecek varsa mail gönderecek.
+    // Yani RabbitMQ'nun consume kısmı burası. Producer kısmı Service kısmında
+    // Login olunca publish ediyoruz.
     public class EmailSendBackgroundService : BackgroundService
     {
         private readonly RabbitMQClientService _rabbitMQClientService;
@@ -27,7 +33,6 @@ namespace AuthServer.API.BackgroundServices
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            //while !stoppinkCoken ekle
 
             var consumer = new AsyncEventingBasicConsumer(_channel);
 
